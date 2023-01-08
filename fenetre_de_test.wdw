@@ -1,0 +1,257 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : fenetre_de_test
+ major_version : 27
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : fenetre_de_test
+ identifier : 0x23b27d73037a6af5
+ internal_properties : BwAAAAcAAADenycrscR0UiVGIWak/XDCZ0HMKSZrUW6Xfxxl5pA3G4b2ortYw5d5laJIKFj8DjbcP0bND+iZEWsMSWZV3I6SXcfw8UMQxDkXsZj+kbo3dcImY6cYHczSgfy6qbUeNod6ocnCchNwonGvi/4lHVVvirprBCMieBDpo0aNJYrxeAzVHlFncpYBnmE5vZo5YYMz4kxh/9BTTLfbM6RCcBpLxfu+J6n3pwI/LPEAvDq//IdSKf3mpaviTlPW+dHCs3Hf0JBt1DuDZzz2wWGn4XrZs0pg1WlOOv95iPsbg8BKPp0UrSosx2wWBVuxFXvvzRP6C7lK+SGwJgPK+l4n0G1SmzamkTfreH3uIP2DDaajjG4grcF3PJdaBXBFXr2/uXZRKKCyyz6p3qiSUMTJNyL19IvjBkuKbAoiFAAanNTSSqk6CpxQxXgsszQTndWcnlGqEfSb1SPKnVHNIXmxQJ6uZgkcKD/StuCsuggCu4kVarDSMaFGbyoTX+qIKrfElweivTB3QMRlxSrfQVGDcBeV/NiPi4EIvhKsj4nIsTTqykz2SQElRXczAHUxkcVhsU4pbI4+nIQvAKSMUuBJFCBglBnZG83rXggj5K1XnOQxe0hfMJxNFJHo1fRl7WzPLJMnChORfwQS9iLXCMoX4FxSmxCSgH5g0YEqnYxMTWo=
+ properties :
+  width : 800
+  height : 502
+  widthClient : 798
+  heightClient : 470
+ controls :
+  -
+    name : HTML1
+    identifier : 0x23b27d73037b6af5
+    internal_properties : BwAAAAcAAABEJoNVQvX4fGrhPt4eWO+iN9RS/2ts5UF62eq/N5USFQhEh5Xdtc40fSMBUpMWH+TS7bM3TxOMPrnRk+vxW6X/O+98mfOACKS3tMjA25MvPKTWzJw30NYq2uwlrGeyhoMMCvxKb8Mn0WmxtAfbLztVEJDyFHnpWMs2plzschqj7FXh8yJ38bdBYKkPrw0jia496qKqGOXRRxPjN6XxZsz1fYS1JzJ8gVc0qNyZ9A4TiAQqEw5YEN+d5PsbAcxZg4kuUOeVhhdyu0rZQ15HDwOykg+TAJGkTInO8p7eaxdiHcykKkudP5gW0r923cTKvN/AK5tI4lxnbKgjjkdLe3TqDv3XDCmrgSfgTleY3ugfOozqY/W/XaEg4nzbKLqUIrB6Dmak/EiFY/IhcGEM5VrzJihgutM6OC9jfzuLXl6pB1eAwDr50lFGA/xsIm9brqGmAxWeslyjWkOlvQ==
+    properties :
+     x : 6
+     y : 42
+     width : 786
+     height : 422
+    type : 23
+    code_elements :
+     type_code : 36
+     p_codes :
+      -
+        code : |1+
+         PROCÉDURE ClicLien(sUrl est chaine, bDansNouvelleFenetre est un booléen, sDestination est une chaine)
+         
+         RENVOYER Vrai
+        type : 266
+      -
+        code : |1+
+         PROCEDURE ChangePage( sUrl est chaine, sDestination est une chaine )
+         
+         RENVOYER Vrai
+        type : 290
+      -
+        code : |1+
+         PROCEDURE ChargementRessources( sUrl est chaine, nType est entier )
+         // nType donne le type de ressource à télécharger
+         // exemple : typehtmlResImage, typehtmlResScript, typehtmlResCss, typehtmlResXMLHttpRequest, typehtmlAutre
+         // ATTENTION : ce traitement est appelé depuis un thread secondaire
+         
+         RENVOYER Vrai
+        type : 289
+      -
+        code : |1+
+         PROCEDURE ClicDroitLien( sUrl est chaine )
+        type : 291
+  -
+    name : Init
+    identifier : 0x23b27d73037c6af5
+    internal_properties : BwAAAAcAAAArLhdM1RphxNVOHoW4mZ3rUAnBPiDuk88axPy3GR4gWiipm2UZPYgZDdYe9KxAkFSA1myrNo2JBATbXkCkLzNteJRdzoA5yIVvs2NPUaVCh8RFa9kQDNYQmr2RnjIb5zDQsBJkAvD/Vv2NCL34a68r0V2AuQM0qUfgIQ32PcauAULerZODYZNPreOmk9puA2eOv9bUGpmw0Tpz8kArJP4k9e6+BbU8XUeDbxBzeXIOZUiqZaVsUMoIA+AehjKd0r3Mb7O9SEJwB0X4WtFGf3LNLGWuhdN8THV58XpoWTAFADMU7GU7Dsm3vH5jYaCi3eIXzqVKF8yJatzg9AdvmZtSqrooSvHpaa71Vu5LErz5IqYBO3miVfSyjpwoJTx7uazksfAXoSFVA/oUg8f1cjeWK9pAxiM+dm5lZx4nFDIe39OPG88p9iXygIra64vavT9ijU7f7X0mvgFZxiOSChV+SurSZNyJYSkUVvZ+JEHBtkYXkWRp4e9vRqV5C9X0xcr0vFuKgvJdVAhoj2T/TMCdaTtkUYGQ72qwcAse+8vSoSvSYYjw7oQ5LgKVOD+4ZDa/kBk16Vc90Pmoti+8vm1gWLw7O6qtW86fc2U5ELMR8pRD39O7bCuANes2ABNHp1JAOJMBlIIS6JIOHXAaNbhw2qTBalxDYcpz4UnpmVbCYU7blwmj+dPqto1zGyhC4AJE7dBxVzhsTvR4GaFWf6y94vyNjqW+6mebQqwwxErE/RlqOwh++3Ng7GLdDz1pXFWfurVSMsvbx7HPjyp2sCnYNsg/pkX82odcHWILW5aQiKPMX8igKNywOCoDRq4=
+    properties :
+     x : 6
+     y : 6
+     width : 486
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         code_html est chaine = [
+         <html><§cs:4§>
+         <head><§cs:4§>
+         </head><§cs:4§>
+         <§cs:4§>
+         <style><§cs:4§>
+         body {<§cs:4§>
+           background: #F6F800;<§cs:4§>
+           xcolor: #FFAAAA;<§cs:4§>
+         }<§cs:4§>
+         <§cs:4§>
+         #editor {<§cs:4§>
+         	font-size: 24px;<§cs:4§>
+             background: #F6F80A;<§cs:4§>
+         <§cs:4§>
+         }<§cs:4§>
+         .codeflask  {<§cs:4§>
+           background: #FFFFFA;<§cs:4§>
+         }<§cs:4§>
+         .codeflask .token.comment {<§cs:4§>
+           //color: #9badb7;<§cs:4§>
+           background: #9badb7;<§cs:4§>
+           width:400px;<§cs:4§>
+           display:inline-block;<§cs:4§>
+         }<§cs:4§>
+             <§cs:4§>
+         #editor2 {    <§cs:4§>
+         	.codeflask {<§cs:4§>
+         	  background: #008080;<§cs:4§>
+         	  color: #000000;<§cs:4§>
+         	  }<§cs:4§>
+         	<§cs:4§>
+         	.codeflask.token.comment  <§cs:4§>
+         	  text-align: center;<§cs:4§>
+         	  color: #ff4a4a;<§cs:4§>
+         }<§cs:4§>
+         </style><§cs:4§>
+         <body><§cs:4§>
+         test<br><§cs:4§>
+            <p id="editor" name="editor"/><§cs:4§>
+         </body><§cs:4§>
+         <script language="Javascript" type="text/javascript" src="https://unpkg.com/codeflask/build/codeflask.min.js"></script><§cs:4§>
+         <script language="Javascript" type="text/javascript"><§cs:4§>
+         <§cs:4§>
+         // decrit la coloration pour wd-fezx-bison<§cs:4§>
+         // voir https://prismjs.com/extending.html#language-definitions<§cs:4§>
+         Prism.languages['wdflexbison'] = {<§cs:4§>
+         <§cs:4§>
+         	'string': {<§cs:4§>
+         		pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,<§cs:4§>
+         		lookbehind: true,<§cs:4§>
+         		greedy: true<§cs:4§>
+         	},<§cs:4§>
+         	'comment': {<§cs:4§>
+         		pattern: /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,<§cs:4§>
+         		greedy: true<§cs:4§>
+         	},<§cs:4§>
+         	'number': /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,<§cs:4§>
+         	'punctuation': /[{}[\],]/,<§cs:4§>
+         	'boolean': /\b(?:false|true)\b/,<§cs:4§>
+         	'important': {<§cs:4§>
+         		pattern: /\[\%/,<§cs:4§>
+         		greedy: false<§cs:4§>
+         	},<§cs:4§>
+         	'function': /hLit/,<§cs:4§>
+         	'keyword': /renvoyer/<§cs:4§>
+         <§cs:4§>
+         };<§cs:4§>
+         <§cs:4§>
+         function injectCss (css, styleName, parent) {<§cs:4§>
+           const CSS_ID = styleName || 'codeflask-style'<§cs:4§>
+           const PARENT = parent || document.head<§cs:4§>
+         <§cs:4§>
+           if (!css) {<§cs:4§>
+             return false<§cs:4§>
+           }<§cs:4§>
+         <§cs:4§>
+           if (document.getElementById(CSS_ID)) {<§cs:4§>
+             return true<§cs:4§>
+           }<§cs:4§>
+         <§cs:4§>
+           const style = document.createElement('style')<§cs:4§>
+         <§cs:4§>
+           style.innerHTML = css<§cs:4§>
+           style.id = CSS_ID<§cs:4§>
+           PARENT.appendChild(style)<§cs:4§>
+         <§cs:4§>
+           return true<§cs:4§>
+         }<§cs:4§>
+         <§cs:4§>
+         const editorElem = document.getElementById('editor');<§cs:4§>
+         const flask = new CodeFlask(editorElem, { language: 'wdflexbison',<§cs:4§>
+         										  defaultTheme: false,<§cs:4§>
+         										  lineNumbers: true<§cs:4§>
+         										  }<§cs:4§>
+         										  <§cs:4§>
+         										  );<§cs:4§>
+         flask.addLanguage('ruby', Prism.languages['wdflexbison']);<§cs:4§>
+         <§cs:4§>
+         //injectCss(defaultCssTheme, 'theme-default', flask.opts.styleParent)<§cs:4§>
+         <§cs:4§>
+         //var style = document.createElement('style');<§cs:4§>
+         //style.type = 'text/css';<§cs:4§>
+         //style.innerHTML = '.cssClass { color: #f00; }';<§cs:4§>
+         //document.getElementsByTagName('head')[0].appendChild(style);<§cs:4§>
+         //<§cs:4§>
+         //document.getElementById('codeflask').className = 'cssClass';<§cs:4§>
+         <§cs:4§>
+         //editorElem.getElementById('codeflask').style.token['punctuation'] = {<§cs:4§>
+         //  color: '#FF0000'<§cs:4§>
+         //}<§cs:4§>
+         <§cs:4§>
+         //.codeflask .token.comment {<§cs:4§>
+         //  color: #9badb7;<§cs:4§>
+         //}<§cs:4§>
+         <§cs:4§>
+         flask.onUpdate((code) => {<§cs:4§>
+         	WL.Execute("onModif", code)<§cs:4§>
+         });<§cs:4§>
+         flask.updateCode('// code de text\nx = ""\nhLit(2);');<§cs:4§>
+         <§cs:4§>
+         <§cs:4§>
+         <§cs:4§>
+         </script><§cs:4§>
+         </html><§cs:4§>
+         ]
+         
+         
+         
+         HTML1 = code_html
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : BwAAAAcAAABHivBqFH8xYQq/QELUltmClIuqm9KM3lg0XSaBAQ41WqT06R9JfU0qGK5sHUl8/xHCuvP3y9tLeLLOVaAgM2FjnfwSCRBgXqneLsHogwTYpIXuB1zp2uXtmOXYyGd6i+ek6BBvtJ0ylgF/MxkRihdZ26pl/9Jf5c+sxo07G0ZzHfcLEu9WD07gTSld25EPGWjvi/e5TxaHOZSRE8C5Ig+YdJawYdK89l+x1ofEmw3pfCNLUe3tNoiwg4AbC1jLdufmJ97Xc0JHDAy7gJsHBzEWwcuroqy2By4PJ4c6Wg==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : BwAAAAcAAADG0006i3ptxMcUE+O5cGvDhb43eRlY9UEE1z/7izK93v/ToMiwACETQQw4eQhZuJRMFa6SBwwT+zSdDbdc5HEkXDob51ldPFNKsP+0MWY=
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+  procedures :
+   -
+     name : onModif
+     procedure_id : 1419334765454387957
+     type_code : 14
+     code : |1+
+      procédure onModif(c)
+      
+      trace(c)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : BwAAAAcAAAARaqIs1pWWTrjJkc2sbefp8NGAHSVvdRgpQIePRe9rhkbpERRVEF+Nx8mIqTxrVGdwHX99jtU=
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x13b1911000040b5a
+  internal_properties : BwAAAAcAAAAZ++HSz2luvwiNhadWl8v3mh2d0Pq0fCIps02kogrcwVHmCg==
+custom_note :
+ internal_properties : BwAAAAcAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : BwAAAAcAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

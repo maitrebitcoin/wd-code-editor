@@ -1,0 +1,212 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FI_editeur_de_code
+ major_version : 27
+ minor_version : 0
+ type : 8
+ description : ""
+ subtype : 0
+window :
+ name : FI_editeur_de_code
+ identifier : 0x23b27b3e02ebca96
+ internal_properties : BwAAAAcAAAA486TTZYfXQf5CCJ0txVRUXytV5BYgjvIr372rVlV5NPOnJ0OmFcT/F2sabez6bGMiGKKylrvNgFHyPMn/EZBTuh86T0Y8vx2gq3wjN+0a7ubdWmlkCJzbhLHLELk5xzfb2xNYGZcJegDt8Hhoja+AwntF0lCXwxktRO8KZWi/rgE1KwEW5Tk26xIfFXU+hRL9IfNAGmtCTeNa1ddUsfBTSpWxxFpqBTEOapyuuyJNlusEVlFaiqwX+jYmoPIOtH8PmiXGUO72WNU5WMgnWQ9YgickZX0eDyUPGX6ZTdekZ+ZuVeN1G2pbeKYD9XBX6js0CZR+e5H8xw9AJObsK6qFdDtuU28fjVccr7ce+rgdWqeI7qycpktZy5bwwERqW4lQRSYwwUwLiYd7BhnUDxhi9dzkC4qC5FGZBJUZ9H9FSen3bN5nCFUnIv7tcNjcBeslTOLtc5MxJL5WBcCpwDHEf96tivGfkwKzf6eLbA13sRY49+fOHPfsjbDsQ6r4Sat0lHUGcQhqj8JVD6p0cpy1pDbldvVjeyuZGeAtIDeBM2ho8umOYWGVWSP9p9QhEjY0/5GIT6fKpqZ+Cjod6kA63fintLgpkHF604649hdzEYI0FkaZjW8dZC8g6g4rkHSHl4lkD/VAHtjIu9eUT8qwpgLL2H/pOnG97U3tOovm0FjOds7oOSfghqM67mk/0lV2WJmlIlv7Kmg7aJpZypktPA==
+ properties :
+  width : 640
+  height : 480
+ controls :
+  -
+    name : FI_editeur_de_code
+    identifier : 0x23b27b3e02ecca96
+    internal_properties : BwAAAAcAAABkBufkbgwjn4/G1UGy1CmUJl8PEMxnp5uNgRsBdcL+xb3Yue6Sbih+hC2x4ex8zyglzHKTXhfExhNQF7Q3UZB6pI8pmeR2imoD983yMiz/xPAHbtoYfbO8ogRy4GmngotJxkCtafhuykD9y6cDzvtCrmAQF6ffk5lndiZ66Iqt+wc+214i7bSnmleSg4LUULQvjmvXYYWxu9jD+Vwr/8aurN2HY+NIbE5qpezriai+jM6x+cj5ziAqwumIKs7an2FqKIHN2xH8D807YtEe+TRxSWMMLYWQhTkxsoDkMJALzdoa4Oy0gtJ9DCqQeZhGxoVvI1HSMNTy2xEWsyzePIg/Wgxsz/WQ+T9a8rEKjQGu+2KskMhmODMic+6fIu1+798Yx0/j/dZlnJx4kd66o8l2Zuv8eLRu3Bq1Z447YmxWkimxz9cByWyFZrFwGw==
+    properties :
+     width : 640
+     height : 480
+    controls :
+     -
+       name : HTML_edit_code
+       identifier : 0x23b27b4502f4e5af
+       internal_properties : BwAAAAcAAADnzQ+hTABbh0mrO9RwZcllv3+zHs7/yQy8wHDkszPxhe9hEjLBTVi92ozezDh6S/ye8qr4FuQ8d7bAPZ7mQ8+1QcTvT5bf1K326dMdLuXwcQr/ao56gDisJJwTmdtH/tWwuyCuKZiLAzbI3PpEWtH5DpTv37Qr2IjNQi8Yh+ZozucL3gakOowbl5oqNXqxigoz25XRMTGvIhpRmuAMp8DfNiS1GXVc47IRNCMycJkXWOvU9T/XA3rH56B95hwd2DCI57ZRXDnpPfVGIdFF8UCRKOpKgcxjsnjWmJPQGkDWFWR3Kw+fI+sEwRQeGpzsbwjKkrjKJiK+xun0A07L9L8RJIa8HV75PJbV1NJSXTFH+oScKGqpax7VPGEmFKVFvN0x16o/nfEMhDN+HnQ6J++IqakyLfM/WuJi/2bqUC+2wBdIs3pPTpqVZMtKT/pcjIySjK6WUHs=
+       properties :
+        width : 640
+        height : 480
+       type : 23
+       code_elements :
+        type_code : 36
+        p_codes :
+         -
+           code : |1+
+            PROCÉDURE ClicLien(sUrl est chaine, bDansNouvelleFenetre est un booléen, sDestination est une chaine)
+            
+            RENVOYER Vrai
+           type : 266
+         -
+           code : |1+
+            PROCEDURE ChangePage( sUrl est chaine, sDestination est une chaine )
+            
+            RENVOYER Vrai
+           type : 290
+         -
+           code : |1+
+            PROCEDURE ChargementRessources( sUrl est chaine, nType est entier )
+            // nType donne le type de ressource à télécharger
+            // exemple : typehtmlResImage, typehtmlResScript, typehtmlResCss, typehtmlResXMLHttpRequest, typehtmlAutre
+            // ATTENTION : ce traitement est appelé depuis un thread secondaire
+            
+            RENVOYER Vrai
+           type : 289
+         -
+           code : |1+
+            PROCEDURE ClicDroitLien( sUrl est chaine )
+           type : 291
+    type : 32
+    code_elements :
+     type_code : 70
+     p_codes :
+      -
+        code : |1+
+         PROCEDURE MaFenêtre()
+         
+         global
+         	code_saisi est une chaîne UNICODE
+         	
+         ParametreEditeur est une structure
+         	avec_numéro_de_ligne est un booléen 
+         	nom_langage est une chaîne // ex : "js" 
+         	definition_token est chaine // regexp qui définissent le langage si on en veut un perso
+         	style_css_token est chaine // css pour rendu des token. mettre "" pour <par défaut>
+         fin
+      -
+        code : |1+
+         code_saisi = MoiMême..Valeur
+         code_js est chaine = [
+         	flask.updateCode('%1')<§cs:4§>
+         ]
+         param_js est chaine UNICODE = code_saisi
+         param_js  = remplace(param_js,"""","\""")
+         param_js  = remplace(param_js,rc,"\n")
+         code_js = Remplace(code_js,"%1",param_js)
+         
+         ExécuteJS(HTML_edit_code,code_js)
+         
+        type : 43
+      -
+        code : |1+
+         MoiMême..Valeur = code_saisi
+         
+        type : 42
+ menu :
+  name : _Menu
+  identifier : 0x23b27b2e02e88cc1
+  internal_properties : BwAAAAcAAAAmnmsMK+pSZJrizHlry5BJP+sbufa4zccF/7flbZf4xlv2rTJ5avaWvToZog8Bfg5qj5cqL9/K+JLwUxYFygPOe4+hQvOqbwHe/B4YH64plXyGcwsEwRu1H7jq/rNyP/R81O/USeI2/APkVZidyxtNh0Y/fytnunm/iyk7nElGG0atcn+8qJ8LBDnxES4mH02yeiwFrgWEo6ixqShEqe7e3BCIlx4J1qYpblIc431oi7HFGkFiVZlDyYxU+PQl0CTH8W8dFRumzgcOnys3VyceJZTYWUhKrQ==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar : {}
+ code_elements :
+  type_code : 71
+  p_codes : []
+  procedures :
+   -
+     name : onModifCode
+     procedure_id : 1419333434012904727
+     type_code : 14
+     code : |1+
+      // appelé depuis le JS a chaque modification du code
+      procédure onModifCode(code_js est chaine ansi )
+      
+      code_saisi =UTF8VersUnicode(code_js)
+      
+     type : 458752
+   -
+     name : init_editeur
+     procedure_id : 1421290032136442246
+     type_code : 14
+     code : |1-
+      procédure init_editeur( parametre_editeur est ParametreEditeur  )
+      
+      // Init du champ HTML avec un champ <P> géré par le JS de codeflask
+      // voir https://github.com/kazzkiq/CodeFlask
+      code_html est chaîne = [
+      <html>
+      <head>
+      </head>
+      <body>
+         <p id="editor" name="editor"/>
+      </body>
+      <script language="Javascript" type="text/javascript" src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+      <script language="Javascript" type="text/javascript">
+      
+      const editorElem = document.getElementById('editor');
+      // creation editeur
+      const flask = new CodeFlask(editorElem, { language: 'PARAM_LANGUAGE',
+      										  defaultTheme: true,
+      										  lineNumbers: false
+      										});
+      // CODE_SI_LANGUAGE_PERSO
+      
+      // CODE_SI_CSS_PERSO
+      									
+      // init a chaine vide										
+      flask.updateCode('')
+      // pour que la procédure onModifCode soit appelée a chaque modif du code
+      flask.onUpdate((code) => {
+      	WL.Execute("onModifCode", code)
+      });
+      
+      </script>
+      </html>
+      ]
+      
+      // code JS si on veut personnaliser le langage de l'éditeur de code
+      // voir https://prismjs.com/tokens.html
+      lang_perso est chaîne = parametre_editeur.nom_langage
+      code_js_desc_language est chaine = [
+      	Prism.languages[[%lang_perso%]] = {
+      		CODE_DEFINITION_TOKEN
+      	};
+       	"flask.addLanguage('[%lang_perso%]', Prism.languages['[%lang_perso%]']);"
+      ]
+      
+      
+      procédure interne _PatchHtml( a_rerchercher, valeur_finale )
+      	code_html = Remplace( code_html,a_rerchercher,valeur_finale )
+      FIN
+      
+      // init chaine
+      _PatchHtml( "PARAM_LANGUAGE", parametre_editeur.nom_langage )
+      
+      si parametre_editeur.avec_numéro_de_ligne alors
+      	_PatchHtml(  "lineNumbers: false", "lineNumbers: true" )
+      fin
+      // si on veut un langage personnalisée
+      si parametre_editeur.definition_token<>"" ALORS
+      	s est chaine = Remplace( lang_perso ,"CODE_DEFINITION_TOKEN", parametre_editeur.definition_token )
+      	_PatchHtml("// CODE_SI_LANGUAGE_PERSO", s + rc)
+      FIN
+      // si on veut une coloration personnalisée
+      SI parametre_editeur.style_css_token<>"" ALORS
+      	//TODO
+      	//s est chaine = Remplace( lang_perso ,"CODE_DEFINITION_CSS", parametre_editeur.style_css_token )
+      	_PatchHtml("defaultTheme: true", "defaultTheme: false")
+      
+      FIN
+      
+      
+      // init champ HTML
+      HTML_edit_code = code_html
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : BwAAAAcAAAA6ih3UbgNXHwTtiPSFUEj+2fi/m7v4QV2rqidAupM=
+  original_name : FenêtreInterne1
+resources :
+ string_res :
+  identifier : 0x13b27b2e001f8cc1
+  internal_properties : BwAAAAcAAAAnMYFQ1bL/vz9ehh7L22SNNSlIzGTOI8h5F/WtgDNP
+custom_note :
+ internal_properties : BwAAAAcAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : BwAAAAcAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
