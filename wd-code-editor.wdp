@@ -40,16 +40,6 @@ project :
   identifier : 0x43b190c902fff779
   elements :
    -
-     name : fenetre_de_test
-     identifier : 0x43b1911a030f3161
-     internal_properties : BwAAAAcAAAB3wW05ukcXyAh+r60BFskENvpCgJXZI0HqgBCYPhafwOmhO7j3/j/IYnpFcl29emHy
-     physical_name : .\fenetre_de_test.wdw
-     type : 2
-     configurations :
-      -
-        configuration_id : 13902591699598933214
-        excluded : true
-   -
      name : Champ_editeur_de_code
      identifier : 0x43b27b3e0545ca96
      internal_properties : BwAAAAcAAADJRTHV0o+nSBZ3dAvXwqIEQzyujijDviy2tb+EIuE9qwnn0flN+PZ5M+rULPTslATMVA==
