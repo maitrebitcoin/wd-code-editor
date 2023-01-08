@@ -139,6 +139,10 @@ window :
       <html>
       <head></head>
       <style>
+      body {
+          margin: 0;
+          padding: 0;
+      }
       STYLE_SI_CSS_PERSO
       </style>
       <body>
