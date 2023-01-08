@@ -94,26 +94,15 @@ window :
          // au format "prims"
          // voir https://prismjs.com/extending.html#language-definitions
          Prism_languages est chaine = [
-         	'string': {
-         		pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,
-         		lookbehind: true,
-         		greedy: true
-         	},
-         	'comment': {
-         		pattern: /\/\/.*|\/\*[\s\s]*?(?:\*\/|$)/,
-         		greedy: true
-         	},
-         	'number': /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
-         	'punctuation': /[{}[\],]/,
-         	'boolean': /\b(?:false|true)\b/,
-         	'important': {
-         		pattern: /\[\%/,
-         		greedy: false
-         	},
-         	'function': /trace/,
-         	'keyword': /renvoyer/
-         };
-         
+         // commentaire
+         'comment': {
+         	pattern: /\/\/.*|\/\*[\s\s]*?(?:\*\/|$)/,
+         	greedy: true
+         },
+         // nombre
+         'number': /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
+         // mot clé
+         'keyword': /renvoyer/
          ]
          
          // init FI_editeur_de_code 
@@ -123,7 +112,8 @@ window :
          param.definition_token		= Prism_languages
          FI_editeur_de_code.init_editeur(param)
          
-         FI_editeur_de_code= "//autre code" + rc + "trace(4)"
+         Multitâche(-10)
+         FI_editeur_de_code = "//autre code" + rc + "renvoyer 42"
         type : 18
       -
         type : 161

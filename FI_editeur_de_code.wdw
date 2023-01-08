@@ -170,10 +170,10 @@ window :
       // voir https://prismjs.com/tokens.html
       lang_perso est chaîne = parametre_editeur.nom_langage
       code_js_desc_language est chaine = [
-      	Prism.languages[[%lang_perso%]] = {
+      	Prism.languages['[%lang_perso%]'] = {
       		CODE_DEFINITION_TOKEN
       	};
-       	"flask.addLanguage('[%lang_perso%]', Prism.languages['[%lang_perso%]']);"
+       	flask.addLanguage('[%lang_perso%]', Prism.languages['[%lang_perso%]']);
       ]
       
       
@@ -189,7 +189,7 @@ window :
       fin
       // si on veut un langage personnalisée
       si parametre_editeur.definition_token<>"" ALORS
-      	s est chaine = Remplace( lang_perso ,"CODE_DEFINITION_TOKEN", parametre_editeur.definition_token )
+      	s est chaine = Remplace( code_js_desc_language ,"CODE_DEFINITION_TOKEN", parametre_editeur.definition_token )
       	_PatchHtml("// CODE_SI_LANGUAGE_PERSO", s + rc)
       FIN
       // si on veut une coloration personnalisée
