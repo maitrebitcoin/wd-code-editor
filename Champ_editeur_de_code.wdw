@@ -1,32 +1,32 @@
 #To edit and compare internal_properties, use WINDEV integrated tools.
 #Internal properties refer to the properties of controls in windows, reports, etc.
 info :
- name : FI_editeur_de_code
+ name : Champ_editeur_de_code
  major_version : 27
  minor_version : 0
  type : 8
  description : ""
  subtype : 0
 window :
- name : FI_editeur_de_code
- identifier : 0x23b27b3e02ebca96
- internal_properties : BwAAAAcAAAA486TTZYfXQf5CCJ0txVRUXytV5BYgjvIr372rVlV5NPOnJ0OmFcT/F2sabez6bGMiGKKylrvNgFHyPMn/EZBTuh86T0Y8vx2gq3wjN+0a7ubdWmlkCJzbhLHLELk5xzfb2xNYGZcJegDt8Hhoja+AwntF0lCXwxktRO8KZWi/rgE1KwEW5Tk26xIfFXU+hRL9IfNAGmtCTeNa1ddUsfBTSpWxxFpqBTEOapyuuyJNlusEVlFaiqwX+jYmoPIOtH8PmiXGUO72WNU5WMgnWQ9YgickZX0eDyUPGX6ZTdekZ+ZuVeN1G2pbeKYD9XBX6js0CZR+e5H8xw9AJObsK6qFdDtuU28fjVccr7ce+rgdWqeI7qycpktZy5bwwERqW4lQRSYwwUwLiYd7BhnUDxhi9dzkC4qC5FGZBJUZ9H9FSen3bN5nCFUnIv7tcNjcBeslTOLtc5MxJL5WBcCpwDHEf96tivGfkwKzf6eLbA13sRY49+fOHPfsjbDsQ6r4Sat0lHUGcQhqj8JVD6p0cpy1pDbldvVjeyuZGeAtIDeBM2ho8umOYWGVWSP9p9QhEjY0/5GIT6fKpqZ+Cjod6kA63fintLgpkHF604649hdzEYI0FkaZjW8dZC8g6g4rkHSHl4lkD/VAHtjIu9eUT8qwpgLL2H/pOnG97U3tOovm0FjOds7oOSfghqM67mk/0lV2WJmlIlv7Kmg7aJpZypktPA==
+ name : Champ_editeur_de_code
+ identifier : 0x23ba8a0d04238390
+ internal_properties : BwAAAAcAAACkraLwMrP9NA8YwXPcCHZpVcV+vJswVLTydUm22/pKrQjKFoM+fFHiFeajcH0+Z4uRsdWCZkDEn8/HLrN68v1h9X1LKke1iFilQk6dDRyBkFGNhrAddGqMWV/4y1uKwr3xbjqTNeWS94kVBmUSPsiZ7+srlmAANtIjWpL4dRhParPfWQyk3jff9L/IjPkU19zx68l2nNbATAmX/b4Di9tBXNg+eoAoI+fqswOK9p6ROFrPBhYOimeA6+2rGoOcjBZ1AFE/SxSkzxoxmzkp/ZTWo38OvIT6WvVjTDhAIcmre9IxLZv9i3hx/CQRbCWLA2TiCTq5I1c+bK5PxHLIQ4/KVezusUCaW6RKP3hTOe7iFC5FMZsY8sThwDgBL3h9Mxsy2m1jCQTygbZDLySyQhzMV3t90mA0cUUqrsj+whhzNRGw778fsLw9DyJyh26NB0/X6emYCfW81ukmTONDhbuM6QmSpR2LpiZGy6RKmtbb90DTNCS2BBB+noItwIgzkdXcJ07Nb2oTL71LLtnc+0ZBeA9ot3/5PKXK1V3gDDq7szRZhZpCNRgdnO84Pg74hHq+nmZpBy+BpnmqFfZWOL/Vrh67gH3MIlJc/F4q4xlK8DcCDg44fkvmZvDSbv28JjCd+gLO6nL0SoR/EwOnaBw4ILuSqUPcT3PC/vkpu0n3I/9a/dA5+yrjL7V3mmLaWwSDXh0UG7vIHlGo+KsO3g2LaQQJPg==
  properties :
   width : 640
   height : 480
  controls :
   -
-    name : FI_editeur_de_code
-    identifier : 0x23b27b3e02ecca96
-    internal_properties : BwAAAAcAAABkBufkbgwjn4/G1UGy1CmUJl8PEMxnp5uNgRsBdcL+xb3Yue6Sbih+hC2x4ex8zyglzHKTXhfExhNQF7Q3UZB6pI8pmeR2imoD983yMiz/xPAHbtoYfbO8ogRy4GmngotJxkCtafhuykD9y6cDzvtCrmAQF6ffk5lndiZ66Iqt+wc+214i7bSnmleSg4LUULQvjmvXYYWxu9jD+Vwr/8aurN2HY+NIbE5qpezriai+jM6x+cj5ziAqwumIKs7an2FqKIHN2xH8D807YtEe+TRxSWMMLYWQhTkxsoDkMJALzdoa4Oy0gtJ9DCqQeZhGxoVvI1HSMNTy2xEWsyzePIg/Wgxsz/WQ+T9a8rEKjQGu+2KskMhmODMic+6fIu1+798Yx0/j/dZlnJx4kd66o8l2Zuv8eLRu3Bq1Z447YmxWkimxz9cByWyFZrFwGw==
+    name : Champ_editeur_de_code
+    identifier : 0x23ba8a0d04248390
+    internal_properties : BwAAAAcAAAB8ekANO9UU6tKrYZc4MsjOzAKeLsQfTTuxcHDTe+XcWFgC4svM+blgSloyn9Sr+pLRqq3ukv0HkiMh0q7l9ioeNJ/rPV+6+ytp6Q/yBiqKrYw8x7E6Z9pzwpNJx/BY77qH8e1wYWCCsYxDFbm8O0f2MBdehN618ziNS5kS0MUz0HxGHeO+Q0zielB/5j15RVI8kgWy0RuIn6zsiu9CXeQ6wPAuCGE1deamIU+7g0hv2mRP28PxQ8L0XEePrqY8ZI4FkmoB26Ivt3+5ZUGp1ehQtFa3WowQ2n+QLBgvUFq5T1PtSY5YI/PiOS4cw0+5JdFs4xl4oTGoRp/gEq8yOF8ZBY9Fffz1/TxrjxgBPcy00ioB9V9CxaQRPjbtAmFiZh2N6dNAff+61ItjRgJLN3NhOMygIxAmSMdKcERl81u+a0EceGe7oBXU
     properties :
      width : 640
      height : 480
     controls :
      -
        name : HTML_edit_code
-       identifier : 0x23b27b4502f4e5af
-       internal_properties : BwAAAAcAAAAZMgNz/PX/RaBN8pi1RkmHCAB1dC2rH9I1EvbK6Qz+RIMWMWsQZP0szfFNat7oTaH6CV4vkXX0qDEpyIDzIlQFbsUlo3s+gFyB6jGdJBJhABpn/txR23Z4oCo3lcztGTimbso4teVK308KD3vYNX3PLwvsTHBBfeqojd8mqnda+BVEgo39P4GTrTOrhw1Dp4Rqmd0L6Ljfeb2Q1ETNutEy/U4JeLR1zBTrmHLZlN70TVmhCov/m0JR2eYUKhElMAmNmeidhYsr401nosSMa+fs6XBpG9h4i3ynXHTL0wCZaEWmn3R3II3A3HgDAsCJt5tikEdkiInMZnRgzQkb3iCWm6+ojFKP0gpiPqMiUa745+XKmNKX+bOIu1TEC52qffTYC9gb4xrfSqMivoUY3XalcpTEdxWxJe1fqUz/t1WCK059SXW0A74YCz2u9ZILFO4tZuzHlqe7Nyz8BkpXvgz3CYv4S+gP86AvtTCz/MdN1wmDRk5Qp1lDqeT5QfkIOgwd
+       identifier : 0x23ba8a0d04258390
+       internal_properties : BwAAAAcAAAAQVJpAlYSK4swY71XkY/jM2z3GJfTjcSDtPHv8lqnE/iKTQY51UAbZQxh2GBZ3GftQeWc+Dz0v/F9bBe4fHH0FooL9uoJgupMzsxuA2S7rAtd7CviVlN1BRq1a546alvZSKX6xk/k8xNXyphF2nlWAty0zFrC3aFixOH7ENCN90Qx4VjMeMvLWGkYPWBK0Nk0NlA14PkMDJI+kXIVCU9kJIJ71ppvIELX6No1xbLxggJcRRGJvxfup0GwJqbSdcc129UXO8eBXpbrPQkGXdIMkknFLO2XjMZgrDZeGdxg1dPr7NyczoDwE2j1lISONAKktdbWnahcEtNLbOq4mmVsjGjQwkWbj/UZHu79PJdHTIDypoKux19gGNK1ShIHtbMUd/P/FDIFnXVemWVHFgEPd5OJvfejiG3IVOgA8qSs4AGXqwgSQnHSIT4PTrLKfLsRGaKg8+ovPG8e9RLYnv8wbsKsbUZxd4w0oadqWaPxqqNdLX4BYSMFNc863Q1lek+RLIcIvtT90Je4t2Z/TjZ6lFj5YouJyWS09i6PC3xuLn5jlKd50IcKJ9nQLn8SCtywbElDkr75CnG/MuZhOCgofnSfUWyL/NFT9WWPxmmoeXVTs4OwHOsD2sO4OKTsK0Rs6oIdNy9o5fVnITm//RLWcaBAkikcZG9TMeA==
        properties :
         width : 640
         height : 480
@@ -112,7 +112,7 @@ window :
   procedures :
    -
      name : onModifCode
-     procedure_id : 1419333434012904727
+     procedure_id : 1421600420833690512
      type_code : 14
      code : |1+
       // appelé depuis le JS a chaque modification du code
@@ -128,7 +128,7 @@ window :
      type : 458752
    -
      name : init_editeur
-     procedure_id : 1421290032136442246
+     procedure_id : 1421600420833756048
      type_code : 14
      code : |1-
       procédure init_editeur( parametre_editeur est ParametreEditeur  )

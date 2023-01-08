@@ -1,16 +1,16 @@
 #To edit and compare internal_properties, use WINDEV integrated tools.
 #Internal properties refer to the properties of controls in windows, reports, etc.
 info :
- name : test_fi
+ name : exemple_utilisation_editeur_de_code
  major_version : 27
  minor_version : 0
  type : 2
  description : ""
  subtype : 0
 window :
- name : test_fi
- identifier : 0x23b27d8603a9b59b
- internal_properties : BwAAAAcAAACet5epf32TeSSJDjk8ijJSIrhbg16br7WPTBlV6xAqdYNzP6P4Qfb1Ru9tUcMlXbnJBKE3kqE1LXR6rBkX/VKCNLHDvFETBwLi8MEZgYOJmrnKRZZBeT8Y5k25+w2lrMJQfZQZDrMIO5xgymy0RPxfjHW1O/+2w9thcvixUOGufvppuAZTqam+IpYIhwPS1bI3JS1JI5npNxJsRHfHxkCeh2iblcySvnA5mSMgRr5WWX3KB6d9NZ6x5XXaSrnzsxu2FJeYWOxncyEIKohnTyxQUORfbQrw7mwnjgqiv3kDYO78s/n8mJOnzL/26QZbRInD3elljfwFYGKNr5hVIoFvEIGtZ/39pXF4bHq+VHh9LOHGisFAG0gRErZPLTpTL7YyRSzRp5Ua9i4+m7WDF2WpmASeY2rnJzW10gjXBuRRZychNfFmcqS1hKxOXY5pGsfaxSahOVRZ8oE/VyCjbKP7xOLeYcfy/nJ7zhI+gmzZIJGvp5XaKl8eLXV/tRvpMbs2mJSdTXqrY0cgzplwA6+HSFAU5KRIZIoCDBbhavMEnpZaCHgNCrC41/kMbpNOT9nGRAAufOIIjWzcSAh0MNFRkG8hPrFjqG6hh0A0sKGAX9JagCDq/jUW5GFRu1WNua1/zHOLu8G+cGeVnhLv06DHfhYooC8v2liP/QDwU8RdyKh8j4ieKHWb7moFmrKeHWLc3cMpzOOs4tRwS1uodWDZyz7EadDtQAPU6WkQrL3CWYj3gKejZu2mpwm7hMqaedkT5lYY1JODZxBANk5Ar2NfVl6wlCvOtNqP/XDudjLcMCVDSIt36qpZPNQ=
+ name : exemple_utilisation_editeur_de_code
+ identifier : 0x23ba89e603f7e9f0
+ internal_properties : BwAAAAcAAADaftzLlP++j4n5Zf4OVD1WA1bGsHjdaC0awhJphWpVq4yRMrK2Z/Hh3WW8QFEsDLuRFH1zdaQubb/ONazvQorLsddqaQ7fu97z5BhITE/oQzesj1l15LFOJQ1W7Bzsxde2Bj1N4r5oABAEqJlOLJQmC9s1sQ2Hzvd+VNVPLgOL0XqmSwJh5YhXAL3faux8QO7nzwWu+RsKDrDCS3pb/ZUAbLY3OunlXTmJrL6s3uC/pdLrb1oU01WIa+933YbVoDfUtAzfCcAjxtEPaw1FMpfQVPwpZEBo0PJJBDN3pBPJhq9Ytaw5rdj0qYK4U/eVH68jIqWUf2st0BezTQA7AFaPLht6Ckeg9d8GyYXrpKk6RqAw6CuR94yOdGQqhC8RH0w3ObcvXc4b5qbRzMX6xNbvqGPPoU91PbErzI3BhDdL1SGXFP8ueBCzlvIO+SSngaIclZLhOVhqT0EnLXaPrLaKuvDQQ1saW/s5cEqiniwknzcXG0VkXDppP2Wlo6Vz0OLm3Er7EeIYPHuKDgyvAEUNN1ctD8P1njx4KpwFO8mt41ATA0FvnBAL1IbxWtN/o2jlXrLqmYe+1GRf8UI0VA8MGfyGLeH6xjSUL/STnGZHxVHKCcfyjjYg1j1gXKTt7DCtMY+TN2kK1i0t4A/jss4jzSEkUs1UXDnzjtnlY9fli5rqqv6uE3q8lI7CsgKeLW+cV4V/JuC9jkxiGBYWOmt4BLS0+TK/q5G00ZXP5lxlTTwRUcLr8iaPeF1PWlaxm6L1MJCApzlVqLGADjhtXVNAmldelinaVgc9PjEC021c2hyDfQZZ161TIMG/w2n6Ua+jzWGJDcZIWHJaVBxnpin7g3GcZroyQUWjK0SDyZatUe8r
  properties :
   width : 658
   height : 497
@@ -18,9 +18,9 @@ window :
   heightClient : 465
  controls :
   -
-    name : FenêtreInterne_éditeur_de_code
-    identifier : 0x23b27d8b03b5c654
-    internal_properties : BwAAAAcAAADUW9IXdS5CZzq0ZZ+SzN66vLqnqZHe1J42ATLVCy7tTd9Iy6DD5YdrGEwFe2zxxqqXMzky2SNo2iQO1X/03r4x+PJA1YXbvWr6hn1LURUvhUcHo0XYWHV/mRWnQCJ77P0/j/zTgLhVbv8UmJ8gmqBeHhiGB0f8EBQRRIxI86yYwuGlde3Ur3Va8jIsbFPwAnO9kKEpS/Ug9HDN4IXFqdKldnoP995iaSRR5DuDNY3FNkKT+TtEtSwiBOfKbvd89SxnUNdyRoPWUWW573RYH5fjpgHgfoR7/dorFoJDGRfdCJf8RFTIN6Pze8L4CrmJZThHDNqm9zHJux/0pv/wc7SD2kAjIboWhJSzYeIZjH1Hk7zkJtZa1C/0N1eFoKSuAMJAgUUYet6JYodNQkwpkAVrEJAOYXyjTs8tcP0DqhYcPMMLajC5QcT/ITg9gBd6bfbwiY2WxR3GvZQtixNuwsN+9qxhTwTdwYElcpCz4dIAkG7RL0DlsVSqwWZcKuhQtOQn6g0XHHNz0u3/Nhop4bRuKRHY3jGu
+    name : CHAMP_ED_CODE
+    identifier : 0x23ba89e603f8e9f0
+    internal_properties : BwAAAAcAAACyAduw8rIKEXu9Wqq8HDH87oAZay/QShg88zfjfMKdQU3TUqDk5O9MiNI+6UTsZLRV6g41k9x5yaut/RZ1roieaNbIXFUKlSaYnntTBU4Rbo4xvrAcsOO2JxoSlj3Nye/O3PfqKe6x00fygiLjJSPYnAUZBCx8CVWxGia2w7uaqpcxeM0ocknHI44agHfOd/QzgL8t2oo/e65T1jnTXsEveqcJ09yy2m93G4ZNuQcGChccu1HcOj6i5nKSu9LLzWFQgYtZamVL99px04kEC+ZehBVr4ucs8JfH50FQc5YpMnsZ/KUIA8a1g/E7OUjkx1sMqbEynRNEoUgxJanoTyzuN4MzOIgC3k4U0gYjzuEA2sgyWL9Gyeys4N0ffflARi8Ggvh+i76jzd0omhreerV9x/I42wNegP3udZb5mUjHkrq1pnVtsM6V5oz13EjfjOtXyDNGRpHucC+q2+/VNlvQ/+xlKHo+Ft7zgcMCzNJvFnE+zeIrmd9e6H7Gho7Qw0srzmwdI3xQYucBmuhGMkjjpKAja0MEUxCRWUitCQ==
     properties :
      x : 177
      y : 12
@@ -36,7 +36,7 @@ window :
         enabled : false
   -
     name : Affecter_le_code
-    identifier : 0x23b27d9203fbe2f4
+    identifier : 0x23ba89e603f9e9f0
     internal_properties : BwAAAAcAAAB51B3BqE16E//n4ek+mjMkKzdlBU0zRsI0PesYrFI9FJRias2RaXSD2oYO24O0805A61PFsJ2z6NthsptXhchtPnVgWjB4sg3ln0jNDGGHuPNUsLmSk6DhnZd2YKMuT9QT06iKrKQZ21C+jw75PBg4i4XZetecKpug/OOPYOTJr0axehtEMPdA+SZxEeSqj/z+wCeZ07GCChykFCP6vy9h7rHclXfToVXuJYzjKDmdb6kjsQReKLxoD6HHVTIko4rsnkUZVvbfLCnwDiMuiuHr2uHhN9iYyg0KKTZ8tozw6Y/g/VKOeYr87a7SKQsffmmKi6Gcz5gAPfqOoMYio71GMuYPstJ2mlEqcq3dV184e92qWknx9u/xBO/3BPrGnzfJLWK5vXoNs3FHahQtPpmnJRHrB9GqUfzw3M7LyiSU4KZwk70fQznFYns1sbvv81iRDhD5vcpgOVPEa2M0Y48hO4XYQPAUMVSMRx0UWEQRsUdCl7gfWOOQSqJQZTmlyb9npSli/LGvhxgf4LyjrTDksnJ2bTNV0W3YJ7iEb2IU/OAV+yAoM8zsTsF+eFUNSoUYnzlJp8pp4a1N5ecQ8/cPvRdt66TEU3cJRm4XDpBj3Q2yQytxOcH5Wd5nFnMej9dz4Z2TLIfY30j7cMaoDLLR8T07AvR4Y4FpcB7BvS0qZsFIVxGPRvnRGmpiH0y5OLurgoBpYXMW25KF5FVaZIB+Icn5+POTKC3JgrXmFSm1TQmVkVg2MuDrUJqRmqc8DBT4QQm8Knihxs5pKOkefAzG9Hdr6LIYRNnltV9WFx2pewDza2s/+9IQGY64SaXeLdxwn1XQFdtJSvxVozw=
     properties :
      x : 10
@@ -49,14 +49,14 @@ window :
      p_codes :
       -
         code : |1+
-         FI_editeur_de_code = "// test" +rc+  "x=3"
+         CHAMP_ED_CODE = "// test" +rc+  "x=3"
         type : 18
       -
         type : 161
         enabled : false
   -
     name : lire_le_code
-    identifier : 0x23b27da1040b1c05
+    identifier : 0x23ba89e603fae9f0
     internal_properties : BwAAAAcAAAB4+WRiJbcI+DrlvfU7Gr2a/DRgsuA2KAJuHgvd1wZoHmwFPO4CHOK9FjRuW0eWomjeNRGzCXOxSmeDtpERw66qjBs4kLaIhct7DeVAhQMhjO79P+nl0rszKA6CH079o5BIUEnwuzKcBuaE+YvoNRkqhBAIg/zgs+JaS818vLNIH/O2XGKGQEupTBUqj8NrCBIfpRtfJVSoSS/Z7CoYomIjBBYl0NpGdqJOZW6xjwS9zWj3AfwFo06o4fThxJDp+Sz9E6ZiapyAln2BxS3VS+sEF8IRAiujtRtk8lto7RLYcWeCwPO+wVW3zI/nxqI8fUZ4U02qMe8lHg0YyBhuKeE4p0L0Sx3UFmDWDCEFVyGIpkK4kDgEjj0W4xaLxIL2BL5ROlvg9ob76w0lhe6M8WwBjOOJcsPTQyx36EbFjv+7+PZHxzbRkuTUD7KCvWodZTV/F5eJE2ti/5M8/px+753xJwr8/NpEuDhtMzDQeB8QcnIfi69davKv3nqpXSmVG2NDmia8ismBcMgIkbH+6bO3Zg52UVSTubCJTvVbIIN5B89tu/tQDNvSwLJt5aDJvzaykYfdPzPpo6E7jI3b93gHI5RyFaq57gzrF/KGpC9sh9oc9Gcrfu6sSIlidGjjSZaW5TQVMiaOSn+eEi1j9njM7+ZxNSJzI5fyAiGZpC8LXCtD4EanFlB9Rc32NsMWUEzPwKsfojmjD3OYOQNXXyxQ3OqQ1A3+uqxTDaZ1SHDoYjepabcG0lzCaPGlQ8MsPMACwrVhDv7exCCfzYG5YoDrFr5z1skBC4nPWO/XN37ogNYDuysyZhvTEcx9UVOK7qR8g9bpfOBz6XlbED5L6xs3IqyWfTqrbaloGS6aaDC2Xo0YMXZ/FA==
     properties :
      x : 10
@@ -69,14 +69,14 @@ window :
      p_codes :
       -
         code : |1+
-         trace(FI_editeur_de_code..Valeur)
+         trace(CHAMP_ED_CODE..Valeur)
         type : 18
       -
         type : 161
         enabled : false
   -
     name : Langage_personalisé
-    identifier : 0x23ba652700f66258
+    identifier : 0x23ba89e603fbe9f0
     internal_properties : BwAAAAcAAACxX/d5yGFBNDWB5ro4erlthQD7lA0kE+xZiMYYF/GgPuIyEi7cfUwj4Umhd4sRzETILHYSa5PTYeYEV0E9vYbVf8E6KIppfWaa7rx4cn+OcIvjV2zXwGQ7GqMjiYrMWvdkFvdIZtVLCXnbS76Je14EMvkdo8Ymm0GnRi1DkTV0AHfCD8p2jjPq7mNZ7/ZxyonPCUEpCGGE/kj6hzHekKp5Xq6pO1IXUUYw19uwwyttJthD9gBMLUBTQVb7pXk6rJzjLIlCndeT1I7dicIjbkPNLm2VQxxfDByzZJ1YUttyj81BYOyRNxkZtPZYCt6/6Z3zYmJpl/g2MpfULE+++G6F3rQx02f8+8Ra3Dk9AUzHT67eMUcElF/pcleY7qnvdjgUaIusOcavNBjuBsYq74BYJQaJockjejoQRYjqWabrRZpUD+YqOMeB3uyvGDiieGt0LPIwvgl+icklj6ylUs66cFcGRe8NKX7qDjvvO4GKQHLWi9X4x+XAgt9wUlyigg46KcVzsQRPrep4loPO0sGDHday9uhY613wwOgz8DH7bUmHQ4HjQJ5UGBbgB8JAUyQzEQvOTluFI0uC8xhlTl6QvntRshFXLTNl0xDcAS0KzrYMQW4SoNsxEdEl57oHYO6qUa3cv/RcOZzI5i1Ple3WMv2z7eMJD5/7tdreXHyu1NuJTR9wKD+EDGmY3qb/VBC8tsxue0UtcnIiZ0Fyjbd5Z89aKmlpt9AlE0n3+IQK4FQhj7shF4wAVp4Ef6m8iJT70a/dEpd5nQkLf4sVn3vnlVAm8uDnJ7lxM1aSF4Xv01m+CGr0MCWXqvgE2rDznZXJ0+575DFr0H5k5OQcui6EjJg=
     properties :
      x : 10
@@ -106,21 +106,21 @@ window :
          ]
          
          // init FI_editeur_de_code 
-         param est FI_editeur_de_code.ParametreEditeur
+         param est Champ_editeur_de_code.ParametreEditeur
          param.avec_numéro_de_ligne	= Vrai
          param.nom_langage			= "mon_langage"
          param.definition_token		= Prism_languages
-         FI_editeur_de_code.init_editeur(param)
+         CHAMP_ED_CODE.init_editeur(param)
          
          Multitâche(-10)
-         FI_editeur_de_code = "//autre code" + rc + "renvoyer 42"
+         CHAMP_ED_CODE = "//autre code" + rc + "renvoyer 42"
         type : 18
       -
         type : 161
         enabled : false
   -
     name : Couleurs_personalisées
-    identifier : 0x23ba6c0802be40f2
+    identifier : 0x23ba89e603fde9f0
     internal_properties : BwAAAAcAAACrwsoH2QxCSoleCiw5yYyEzCdAGJDWBDDU5rEak7iJ7Pp9QRFWhy/IIQr20prMsklOaQ5D4Qr4RxSlyCVC/8ymUethR9+3RP4qG8JvCU/SRQYUwfe9huyTITdFIzuq8wm4pF8vka7pMsI8I2K67d+NH5OJG47sYtCB1NOaWbG3B5ZnYFIvbUIrcdIiOLF24nB7wjyJDoqopeaiUt+W8c63XA3z9bp0LQpSxpyiGfBqC7aLRD7le0SIvEVMPphaFmpRkXFnVDoGnDopct339JQJnyqzepFZu1ebU5J/MF+sovK34tv00lQ6BEReYHgcrQIDtVY5pm7nzYVIcOeVLlKMkAvB8r/HaCNgig+HV3+s98yce+Ptr3B20bBSHNy8pSf7+ZknxM1Ub5YJnDMz2bQpqpG3CQnOnIJz3WIkUzeA4iGBVnhFvu3pMRGgnj3gF+MOk3M40VM40coMOHCuHMv8ICpN54of84bX81ID3q0NTLTP4PeFi02Kz4hLChWmSxbQXorDHC6RiT8nkWNBMhqz728pxk+Y/4tDK5+pG8UYIcsQDH2gKnBwQ2Wzxw9wbAIruvo2FwHbY8KTotiYzB/OVmhKggYDrSFwblvCDn/9lO4rLjwXAsVNjICy5bV7qxJ4ojbOjowYv9dLB3Pm2/L6zCC44aw1X42Q/rtok0Tk9lUOgHPhHOcapSw5Cv+ZgcLIVV/0HHcvontBDnWro0qP+4QLgkLvTWC1RYbjH15f+gyCz5KfzkkiwETeMyXL8LFgPEN4CQZdgMU/Wcblfk/yNPDosyz3/DifweOEIcgXUrMZTaG5Ho/D9PIPTJPfIGljFMHIvK/dP73U1b+FbcPH3kSI
     properties :
      x : 10
@@ -168,15 +168,15 @@ window :
          
          
          // init FI_editeur_de_code 
-         param est FI_editeur_de_code.ParametreEditeur
+         param est Champ_editeur_de_code.ParametreEditeur
          param.avec_numéro_de_ligne	= Vrai
          param.nom_langage			= "mon_langage2"
          param.definition_token		= definition_de_mon_langage
          param.style_css_token		= style_css_de_mon_langage
-         FI_editeur_de_code.init_editeur(param)
+         CHAMP_ED_CODE.init_editeur(param)
          
          Multitâche(-10)
-         FI_editeur_de_code = "// style personnalisé" + rc + "renvoyer 42"
+         CHAMP_ED_CODE = "// style personnalisé" + rc + "renvoyer 42"
         type : 18
       -
         type : 161
@@ -194,7 +194,7 @@ window :
   controls :
    -
      name : Case1
-     identifier : 0x23ba65a30135465b
+     identifier : 0x23ba89e603fce9f0
      internal_properties : BwAAAAcAAADSQpb1Q+1KecMMaL1uYgfKUUioh7Jy0SkAXhXPrwkWw7x3kaClhPM46D7lwyAuenWtgSeuPoz7DybAKXSTn4LLMCtaZy7zLNC6
      code_elements :
       type_code : 62
@@ -221,13 +221,13 @@ window :
      code : |1+
       
       // init FI_editeur_de_code 
-      param est FI_editeur_de_code.ParametreEditeur
+      param est Champ_editeur_de_code.ParametreEditeur
       param.avec_numéro_de_ligne = vrai
       param.nom_langage = "js"
-      FI_editeur_de_code.init_editeur(param)
+      CHAMP_ED_CODE.init_editeur(param)
       
       // pour recevoir les notification de modification et mettre a jour a barre de tache
-      FI_editeur_de_code.Traitement_Modification = (code_saisi )=> {
+      CHAMP_ED_CODE.Traitement_Modification = (code_saisi )=> {
        	 Message( Taille(code_saisi) + " cararctères saisis"  )  
       }
      type : 34
