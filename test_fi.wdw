@@ -57,7 +57,7 @@ window :
   -
     name : lire_le_code
     identifier : 0x23b27da1040b1c05
-    internal_properties : BwAAAAcAAAB4+WRiJbcI+DrlvfU7Gr2a/DRgsuA2KAJuHgvd1wZoHmwFPO4CHOK9FjRuW0eWomjeNRGzCXOxSmeDtpERw66qjBs4kLaIhct7DeVAhQMhjO79/+llUjuzqI4Cn859I5DI0MlwuzKcBuaE+YvoNRmqhBAIg3xgM2Lay038PDPIH3M23OKGQEupTBUqj8NrCJIfpRtfpdQoya9ZbKqYIuIjhJalUNpGdqJOZW6xjwS9TWj3AfyFI84oYXRhRBBpeSx9kybiapyAln2BxS3VS+uEF8IRAqsjNZvkctvobZJYcecCQHO+wVW3zI/nxqI8fcZ4U02qsW+lno2YSJjuqWE4J8J0yx3UFmDWDCEFVyGIJkK4kDiEDr2WY5YLRAJ2hL7Ruttg9ob76w0lhe6M8WyBjOOJckNTw6z3aMZFDn87+HbHR7bRkuTUD7KC/SpdpfU/V9fJ06uiP9P8vtw+L92x50o8PJqE+Hit8/AQOF9QMjJfy+8dqjLvHjppnenVWyMD2mb8SgnBsAjIUfG+KfN3Jk62kRTT+fDJDrWb4MO5x4+t+zsQTBsSAHItJWAJ//Zy0ccd/3Mp4+H7TM2bN7jH49SyVWr5Lkwr17LGZG+sR5pcNKfrvi7siEkitCgjiVZWJXRV8mbOir9e0m0jNriMryaxdeKzY9cywuHZZG9LHOuDIIZnVpC9hY22doNWkAyPAOtfYnnjT7NY+UMXn2wQnCrQFM0++uyTzWa1CLAoIvfpqffGEpwCqLFlg4NsfIDCAvVhDv7exCCfzYG5YoDrFr5z1skBC4nPWO/XN37ogNYDuysyZhvTEcx9UVOK7qR8g9bpfOBz6XlbED5L6xs3IqyWfTqrbaloGS6aaDC2Xo0YMXZ/FA==
+    internal_properties : BwAAAAcAAAB4+WRiJbcI+DrlvfU7Gr2a/DRgsuA2KAJuHgvd1wZoHmwFPO4CHOK9FjRuW0eWomjeNRGzCXOxSmeDtpERw66qjBs4kLaIhct7DeVAhQMhjO79P+nl0rszKA6CH079o5BIUEnwuzKcBuaE+YvoNRkqhBAIg/zgs+JaS818vLNIH/O2XGKGQEupTBUqj8NrCBIfpRtfJVSoSS/Z7CoYomIjBBYl0NpGdqJOZW6xjwS9zWj3AfwFo06o4fThxJDp+Sz9E6ZiapyAln2BxS3VS+sEF8IRAiujtRtk8lto7RLYcWeCwPO+wVW3zI/nxqI8fUZ4U02qMe8lHg0YyBhuKeE4p0L0Sx3UFmDWDCEFVyGIpkK4kDgEjj0W4xaLxIL2BL5ROlvg9ob76w0lhe6M8WwBjOOJcsPTQyx36EbFjv+7+PZHxzbRkuTUD7KCvWodZTV/F5eJE2ti/5M8/px+753xJwr8/NpEuDhtMzDQeB8QcnIfi69davKv3nqpXSmVG2NDmia8ismBcMgIkbH+6bO3Zg52UVSTubCJTvVbIIN5B89tu/tQDNvSwLJt5aDJvzaykYfdPzPpo6E7jI3b93gHI5RyFaq57gzrF/KGpC9sh9oc9Gcrfu6sSIlidGjjSZaW5TQVMiaOSn+eEi1j9njM7+ZxNSJzI5fyAiGZpC8LXCtD4EanFlB9Rc32NsMWUEzPwKsfojmjD3OYOQNXXyxQ3OqQ1A3+uqxTDaZ1SHDoYjepabcG0lzCaPGlQ8MsPMACwrVhDv7exCCfzYG5YoDrFr5z1skBC4nPWO/XN37ogNYDuysyZhvTEcx9UVOK7qR8g9bpfOBz6XlbED5L6xs3IqyWfTqrbaloGS6aaDC2Xo0YMXZ/FA==
     properties :
      x : 10
      y : 42
@@ -75,12 +75,12 @@ window :
         type : 161
         enabled : false
   -
-    name : avec_langage_personalisé
+    name : Langage_personalisé
     identifier : 0x23ba652700f66258
-    internal_properties : BwAAAAcAAAB1qxpu70Hny9tWAKMSLTnN7Vh47d4x17CqtwU+X8cbQxPix1IivJjO34XMFKYdvA71cmZeLfvT1VrYoENQCHrzZOwtF9HxRNO2PJopeDt2BRZvuyROpMuJcE0/ObVfWFhns3clU03bLCt3YgbMt7SQ3SA5iYkIw7CE9RQN6PU9GsQn8bdiXMPYUscuUDvs5uleFChtRoHg/pO/fVpVx7cgaH24j2IMpsCYCK8pWLcQHawHiCltjexOg0sYPXB0G1TG12mByXRNO6OHwxKgoc2PNFE72I00L9kSw1juWbksvTMspWQ2aAZJUIXaS943AcCcSo76Ibs2tvcOk+ILJpYUX3oOmQNGZrEBjs3ydeb43hUv7lcQ2TECUEwsha7u+cEY57+qoxrVQHj4cYXxOcJiuN+RnZk9X0i1pGviIeFKB1/XUi9cjo98oR5PuIsNH5G7eh5EWC+WUGhlhb4wWTMw1fEQa4kjeZs/DhnJ2J6HjkfkIf+K/Tn76Q3ScMfBhXyVCddBr4479A340k+BmZDvRgzwaCYiv/r5BPwn/bJgPcDLuXux+g49S2KytdET9FSIpT3M8n/rwhYCAdIuJ5d446NRYqlHa1rcPbQ44OBxtLP+depo2leOshMx02/Amayz57UUv7wCerlgNNcWVLZsS2FHqeGTM6zIC1SsIwetCFL9oZs+KmOpJb+uwDE+AZIlrDY0bwnrv3VmE9UPooh7fokkIKOxoRXxHihAIArHPMWh9G+TdRh3JOupOgBn7W4Ci6PxgGtwFMyJD3AA7JIdGkmzDZE3dDM/DE6Jkoym6RbLr7NXZBHaY+enAoEffYdA72oi3nximPKpJDER7sBuD638HyLxHN0=
+    internal_properties : BwAAAAcAAACxX/d5yGFBNDWB5ro4erlthQD7lA0kE+xZiMYYF/GgPuIyEi7cfUwj4Umhd4sRzETILHYSa5PTYeYEV0E9vYbVf8E6KIppfWaa7rx4cn+OcIvjV2zXwGQ7GqMjiYrMWvdkFvdIZtVLCXnbS76Je14EMvkdo8Ymm0GnRi1DkTV0AHfCD8p2jjPq7mNZ7/ZxyonPCUEpCGGE/kj6hzHekKp5Xq6pO1IXUUYw19uwwyttJthD9gBMLUBTQVb7pXk6rJzjLIlCndeT1I7dicIjbkPNLm2VQxxfDByzZJ1YUttyj81BYOyRNxkZtPZYCt6/6Z3zYmJpl/g2MpfULE+++G6F3rQx02f8+8Ra3Dk9AUzHT67eMUcElF/pcleY7qnvdjgUaIusOcavNBjuBsYq74BYJQaJockjejoQRYjqWabrRZpUD+YqOMeB3uyvGDiieGt0LPIwvgl+icklj6ylUs66cFcGRe8NKX7qDjvvO4GKQHLWi9X4x+XAgt9wUlyigg46KcVzsQRPrep4loPO0sGDHday9uhY613wwOgz8DH7bUmHQ4HjQJ5UGBbgB8JAUyQzEQvOTluFI0uC8xhlTl6QvntRshFXLTNl0xDcAS0KzrYMQW4SoNsxEdEl57oHYO6qUa3cv/RcOZzI5i1Ple3WMv2z7eMJD5/7tdreXHyu1NuJTR9wKD+EDGmY3qb/VBC8tsxue0UtcnIiZ0Fyjbd5Z89aKmlpt9AlE0n3+IQK4FQhj7shF4wAVp4Ef6m8iJT70a/dEpd5nQkLf4sVn3vnlVAm8uDnJ7lxM1aSF4Xv01m+CGr0MCWXqvgE2rDznZXJ0+575DFr0H5k5OQcui6EjJg=
     properties :
      x : 10
-     y : 161
+     y : 96
      width : 147
      height : 24
     type : 4
@@ -114,6 +114,69 @@ window :
          
          Multitâche(-10)
          FI_editeur_de_code = "//autre code" + rc + "renvoyer 42"
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : Couleurs_personalisées
+    identifier : 0x23ba6c0802be40f2
+    internal_properties : BwAAAAcAAACrwsoH2QxCSoleCiw5yYyEzCdAGJDWBDDU5rEak7iJ7Pp9QRFWhy/IIQr20prMsklOaQ5D4Qr4RxSlyCVC/8ymUethR9+3RP4qG8JvCU/SRQYUwfe9huyTITdFIzuq8wm4pF8vka7pMsI8I2K67d+NH5OJG47sYtCB1NOaWbG3B5ZnYFIvbUIrcdIiOLF24nB7wjyJDoqopeaiUt+W8c63XA3z9bp0LQpSxpyiGfBqC7aLRD7le0SIvEVMPphaFmpRkXFnVDoGnDopct339JQJnyqzepFZu1ebU5J/MF+sovK34tv00lQ6BEReYHgcrQIDtVY5pm7nzYVIcOeVLlKMkAvB8r/HaCNgig+HV3+s98yce+Ptr3B20bBSHNy8pSf7+ZknxM1Ub5YJnDMz2bQpqpG3CQnOnIJz3WIkUzeA4iGBVnhFvu3pMRGgnj3gF+MOk3M40VM40coMOHCuHMv8ICpN54of84bX81ID3q0NTLTP4PeFi02Kz4hLChWmSxbQXorDHC6RiT8nkWNBMhqz728pxk+Y/4tDK5+pG8UYIcsQDH2gKnBwQ2Wzxw9wbAIruvo2FwHbY8KTotiYzB/OVmhKggYDrSFwblvCDn/9lO4rLjwXAsVNjICy5bV7qxJ4ojbOjowYv9dLB3Pm2/L6zCC44aw1X42Q/rtok0Tk9lUOgHPhHOcapSw5Cv+ZgcLIVV/0HHcvontBDnWro0qP+4QLgkLvTWC1RYbjH15f+gyCz5KfzkkiwETeMyXL8LFgPEN4CQZdgMU/Wcblfk/yNPDosyz3/DifweOEIcgXUrMZTaG5Ho/D9PIPTJPfIGljFMHIvK/dP73U1b+FbcPH3kSI
+    properties :
+     x : 10
+     y : 131
+     width : 147
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         // décrit les mot du langage pour leur coloration
+         // au format "prims"
+         // voir https://prismjs.com/extending.html#language-definitions
+         definition_de_mon_langage est chaine = [
+         // commentaire
+         'comment': {
+         	pattern: /\/\/.*|\/\*[\s\s]*?(?:\*\/|$)/,
+         	greedy: true
+         },
+         // nombre
+         'number': /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
+         // mot clé
+         'keyword': /renvoyer/
+         ]
+         // style css a applique aux mot du langage
+         // voir https://github.com/kazzkiq/CodeFlask/blob/master/src/styles/theme-default.js
+         style_css_de_mon_langage est chaine = [
+         .codeflask  {
+           background: #FFFFFA;
+         }
+         .codeflask .token.comment {
+           //color: #9badb7;
+           background: #9badb7;
+           width:400px;
+           display:inline-block;
+         }
+         .codeflask .token.keyword {
+           color: blue;
+           font-weight: bold;
+         }
+         ]
+         
+         
+         // init FI_editeur_de_code 
+         param est FI_editeur_de_code.ParametreEditeur
+         param.avec_numéro_de_ligne	= Vrai
+         param.nom_langage			= "mon_langage2"
+         param.definition_token		= definition_de_mon_langage
+         param.style_css_token		= style_css_de_mon_langage
+         FI_editeur_de_code.init_editeur(param)
+         
+         Multitâche(-10)
+         FI_editeur_de_code = "// style personnalisé" + rc + "renvoyer 42"
         type : 18
       -
         type : 161
