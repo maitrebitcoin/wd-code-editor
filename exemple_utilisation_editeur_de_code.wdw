@@ -228,7 +228,7 @@ window :
       
       // pour recevoir les notification de modification et mettre a jour a barre de tache
       CHAMP_ED_CODE.Traitement_Modification = (code_saisi )=> {
-       	 Message( Taille(code_saisi) + " cararctères saisis"  )  
+       	 Message( Taille(code_saisi) + " caractères saisis"  )  
       }
      type : 34
    -
