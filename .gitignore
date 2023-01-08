@@ -16,6 +16,9 @@ Sauvegarde
 *.wdcoverage
 *.wpf
 HstDuree.log
+Folder.ico
+Taches/
+desktop.ini
 #
 #WEBDEV
 *\res
