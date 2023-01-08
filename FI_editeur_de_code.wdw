@@ -26,7 +26,7 @@ window :
      -
        name : HTML_edit_code
        identifier : 0x23b27b4502f4e5af
-       internal_properties : BwAAAAcAAADnzQ+hTABbh0mrO9RwZcllv3+zHs7/yQy8wHDkszPxhe9hEjLBTVi92ozezDh6S/ye8qr4FuQ8d7bAPZ7mQ8+1QcTvT5bf1K326dMdLuXwcQr/ao56gDisJJwTmdtH/tWwuyCuKZiLAzbI3PpEWtH5DpTv37Qr2IjNQi8Yh+ZozucL3gakOowbl5oqNXqxigoz25XRMTGvIhpRmuAMp8DfNiS1GXVc47IRNCMycJkXWOvU9T/XA3rH56B95hwd2DCI57ZRXDnpPfVGIdFF8UCRKOpKgcxjsnjWmJPQGkDWFWR3Kw+fI+sEwRQeGpzsbwjKkrjKJiK+xun0A07L9L8RJIa8HV75PJbV1NJSXTFH+oScKGqpax7VPGEmFKVFvN0x16o/nfEMhDN+HnQ6J++IqakyLfM/WuJi/2bqUC+2wBdIs3pPTpqVZMtKT/pcjIySjK6WUHs=
+       internal_properties : BwAAAAcAAAAZMgNz/PX/RaBN8pi1RkmHCAB1dC2rH9I1EvbK6Qz+RIMWMWsQZP0szfFNat7oTaH6CV4vkXX0qDEpyIDzIlQFbsUlo3s+gFyB6jGdJBJhABpn/txR23Z4oCo3lcztGTimbso4teVK308KD3vYNX3PLwvsTHBBfeqojd8mqnda+BVEgo39P4GTrTOrhw1Dp4Rqmd0L6Ljfeb2Q1ETNutEy/U4JeLR1zBTrmHLZlN70TVmhCov/m0JR2eYUKhElMAmNmeidhYsr401nosSMa+fs6XBpG9h4i3ynXHTL0wCZaEWmn3R3II3A3HgDAsCJt5tikEdkiInMZnRgzQkb3iCWm6+ojFKP0gpiPqMiUa745+XKmNKX+bOIu1TEC52qffTYC9gb4xrfSqMivoUY3XalcpTEdxWxJe1fqUz/t1WCK059SXW0A74YCz2u9ZILFO4tZuzHlqe7Nyz8BkpXvgz3CYv4S+gP86AvtTCz/MdN1wmDRk5Qp1lDqeT5QfkIOgwd
        properties :
         width : 640
         height : 480
@@ -69,6 +69,8 @@ window :
          
          global
          	code_saisi est une chaîne UNICODE
+         	
+         	Traitement_Modification est une procédure
          	
          ParametreEditeur est une structure
          	avec_numéro_de_ligne est un booléen 
@@ -117,6 +119,11 @@ window :
       procédure onModifCode(code_js est chaine ansi )
       
       code_saisi =UTF8VersUnicode(code_js)
+      
+      // appel de la callbakc utilisaeur si définie
+      si Traitement_Modification<>null ALORS
+      	Traitement_Modification( code_saisi )
+      FIN
       
      type : 458752
    -
