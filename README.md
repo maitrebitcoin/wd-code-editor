@@ -7,9 +7,11 @@ Génère un composant qui peut être utilisé dans d'autres projets
 
 ![hc1](https://github.com/maitrebitcoin/wd-code-editor/blob/main/hc1.png)]
 
-# Exemple d'utilisation
+# Utilisation
+
 ## Intégrer le champ
-Ajouter un champ feneêtre interne, lui mettre comme source `Champ_editeur_de_code`
+Ajouter un champ fenêtre interne avec comme source `Champ_editeur_de_code`
+
 ## Ajouter ce code a l'initialisation
 ```
 param est Champ_editeur_de_code.ParametreEditeur
