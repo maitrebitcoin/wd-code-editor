@@ -86,6 +86,7 @@ window :
          ]
          param_js est chaine UNICODE = code_saisi
          param_js  = remplace(param_js,"""","\""")
+         param_js  = remplace(param_js,"'","\'")
          param_js  = remplace(param_js,rc,"\n")
          code_js = Remplace(code_js,"%1",param_js)
          
