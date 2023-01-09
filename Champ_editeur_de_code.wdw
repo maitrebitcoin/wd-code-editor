@@ -238,6 +238,36 @@ window :
       FIN
         
      type : 458752
+   -
+     name : get_numero_de_ligne
+     procedure_id : 1421934449037488553
+     type_code : 14
+     code : |1+
+      procédure get_numero_de_ligne()
+      
+      code_js est chaine = [
+         var input = flask.elTextarea
+         var inputVal = input.value
+         var selStartPos = input.selectionStart
+         var beforeSelection = inputVal.substr(0, selStartPos)
+         var lineNumber = beforeSelection.split('\n').length
+         // renvoie la valeur
+         lineNumber
+      ]
+      
+      num_ligne est un entier
+      terminé est un booléen
+      si pas ExécuteJS(HTML_edit_code, code_js,(b,retval)=>{ num_ligne=retval;terminé=Vrai }  ) alors
+      	renvoyer 0
+      fin
+       // "flask.lineNumber")
+       tantque pas terminé
+       	Multitâche(1)
+       FIN
+       
+      
+      renvoyer num_ligne
+     type : 458752
   procedure_templates : []
   property_templates : []
  code_parameters :

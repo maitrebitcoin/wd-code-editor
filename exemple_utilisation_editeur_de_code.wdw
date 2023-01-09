@@ -225,7 +225,7 @@ window :
       
       // pour recevoir les notification de modification et mettre a jour a barre de tache
       CHAMP_ED_CODE.Traitement_Modification = (code_saisi )=> {
-       	 Message( "taille du code : " + Taille(code_saisi) + " caractères"  )  
+       	 Message( "taille du code : " + Taille(code_saisi) + " caractères | ligne : " + CHAMP_ED_CODE.get_numero_de_ligne()  )  
       }
      type : 34
    -
