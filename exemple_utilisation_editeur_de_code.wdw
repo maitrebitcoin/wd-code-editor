@@ -108,6 +108,7 @@ window :
          // init FI_editeur_de_code 
          param est Champ_editeur_de_code.ParametreEditeur
          param.avec_numéro_de_ligne	= Vrai
+         param.avec_tab				= Vrai
          param.nom_langage			= "mon_langage"
          param.definition_token		= Prism_languages
          CHAMP_ED_CODE.init_editeur(param)

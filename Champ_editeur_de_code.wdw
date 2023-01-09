@@ -83,10 +83,11 @@ window :
          	Traitement_Modification est une procédure
          	
          ParametreEditeur est une structure
-         	avec_numéro_de_ligne est un booléen 
-         	nom_langage est une chaîne // ex : "js" 
-         	definition_token est chaine // expressions qui définissent le langage si on en veut un personnalisé
-         	style_css_token est chaine // css pour les couleurs des token. mettre "" pour <par défaut>
+         	avec_numéro_de_ligne est booléen // si vrai affiche les n° de ligne a gauche
+         	avec_tab 			 est booléen // si vrai la touche TAB est utilisable dans le champ
+         	nom_langage          est chaîne  // ex : "js" 
+         	definition_token     est chaine  // expressions qui définissent le langage si on en veut un personnalisé
+         	style_css_token      est chaine  // css pour les couleurs des token. mettre "" pour <par défaut>
          fin
       -
         code : |1+
@@ -167,7 +168,8 @@ window :
       // creation editeur
       const flask = new CodeFlask(editorElem, { language: 'PARAM_LANGUAGE',
       										  defaultTheme: true,
-      										  lineNumbers: false
+      										  lineNumbers: false,
+      										  handleTabs: false
       										});
       // CODE_SI_LANGUAGE_PERSO
       									
@@ -209,6 +211,10 @@ window :
       si parametre_editeur.avec_numéro_de_ligne alors
       	_PatchHtml(  "lineNumbers: false", "lineNumbers: true" )
       fin
+      SI parametre_editeur.avec_tab ALORS
+      	_PatchHtml(  "handleTabs: false", "handleTabs: true" )
+      FIN
+      
       // si on veut un langage personnalisée
       si parametre_editeur.definition_token<>"" ALORS
       	s est chaine = Remplace( code_js_desc_language ,"CODE_DEFINITION_TOKEN", parametre_editeur.definition_token )
