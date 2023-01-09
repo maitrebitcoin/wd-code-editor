@@ -36,6 +36,11 @@ window :
         p_codes :
          -
            code : |1+
+            global
+            	chargement_termine est un booléen
+           type : 14
+         -
+           code : |1+
             PROCÉDURE ClicLien(sUrl est chaine, bDansNouvelleFenetre est un booléen, sDestination est une chaine)
             
             RENVOYER Vrai
@@ -47,13 +52,18 @@ window :
             RENVOYER Vrai
            type : 290
          -
+           code : |1-
+            
+            chargement_termine = vrai
+           type : 267
+         -
            code : |1+
             PROCEDURE ChargementRessources( sUrl est chaine, nType est entier )
             // nType donne le type de ressource à télécharger
             // exemple : typehtmlResImage, typehtmlResScript, typehtmlResCss, typehtmlResXMLHttpRequest, typehtmlAutre
             // ATTENTION : ce traitement est appelé depuis un thread secondaire
-            
             RENVOYER Vrai
+            
            type : 289
          -
            code : |1+
@@ -149,8 +159,9 @@ window :
       <body>
          <p id="editor" name="editor"/>
       </body>
-      <script language="Javascript" type="text/javascript" src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
       <script language="Javascript" type="text/javascript">
+      
+      CODE_FLAKS_MIN_JS
       
       const editorElem = document.getElementById('editor');
       // creation editeur
@@ -166,6 +177,8 @@ window :
       flask.onUpdate((code) => {
       	WL.Execute("onModifCode", code)
       });
+      // init termineé
+      var init_terminee = 'ok'
       
       </script>
       </html>
@@ -185,6 +198,10 @@ window :
       procédure interne _PatchHtml( a_rerchercher, valeur_finale )
       	code_html = Remplace( code_html,a_rerchercher,valeur_finale )
       FIN
+      
+      // inséreré le framework CodeFlask
+      code_flash_code_sj est chaine = fChargeRessource("CodeFlask/codeflask.min.js")
+      _PatchHtml( "CODE_FLAKS_MIN_JS", code_flash_code_sj )
       
       // init chaine
       _PatchHtml( "PARAM_LANGUAGE", parametre_editeur.nom_langage )
@@ -207,7 +224,13 @@ window :
       
       
       // init champ HTML
+      HTML_edit_code.chargement_termine = faux
       HTML_edit_code = code_html
+      // attendre la fin de l'init
+      tantque pas HTML_edit_code.chargement_termine
+      	Multitache(1)
+      FIN
+        
      type : 458752
   procedure_templates : []
   property_templates : []

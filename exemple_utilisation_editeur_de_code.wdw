@@ -111,8 +111,6 @@ window :
          param.nom_langage			= "mon_langage"
          param.definition_token		= Prism_languages
          CHAMP_ED_CODE.init_editeur(param)
-         
-         Multitâche(-10)
          CHAMP_ED_CODE = "//autre code" + rc + "renvoyer 42"
         type : 18
       -
@@ -174,8 +172,6 @@ window :
          param.definition_token		= definition_de_mon_langage
          param.style_css_token		= style_css_de_mon_langage
          CHAMP_ED_CODE.init_editeur(param)
-         
-         Multitâche(-10)
          CHAMP_ED_CODE = "// style personnalisé" + rc + "renvoyer 42"
         type : 18
       -
