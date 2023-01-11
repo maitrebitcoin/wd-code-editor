@@ -192,10 +192,9 @@ window :
      type_code : 4
      p_codes :
       -
-        code : |1-
+        code : |1+
          
          CHAMP_ED_CODE.cmd_aller_sur_une_ligne( SAI_n_de_ligne )
-         //DonneFocus(CHAMP_ED_CODE.HTML_edit_code)
         type : 18
       -
         type : 161
