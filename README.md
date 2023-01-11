@@ -3,8 +3,6 @@ un champ éditeur de code  pour vos projet WinDev / a code editor control for yo
 
 Génère un composant qui peut être utilisé dans d'autres projets
 
-# Copie d'écran
-
 ![hc1](https://github.com/maitrebitcoin/wd-code-editor/blob/main/hc1.png)]
 
 # Utilisation
