@@ -7,10 +7,9 @@ Génère un composant qui peut être utilisé dans d'autres projets
 
 # Utilisation
 
-## Intégrer le champ
-Ajouter un champ fenêtre interne avec comme source `Champ_editeur_de_code`
+- Intégrer le champ : ajouter un champ fenêtre interne avec comme source `Champ_editeur_de_code`
 
-## Ajouter ce code a l'initialisation
+- Ajouter ce code a l'initialisation :
 ```
 param est Champ_editeur_de_code.ParametreEditeur
 param.avec_numéro_de_ligne = Vrai
