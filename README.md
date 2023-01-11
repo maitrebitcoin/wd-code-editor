@@ -19,3 +19,8 @@ param.avec_numéro_de_ligne = Vrai
 param.nom_langage = "js"
 CHAMP_ED_CODE.init_editeur(param)
 ```
+
+## Aller sur la ligne de code n°4
+```
+CHAMP_ED_CODE.cmd_aller_sur_une_ligne( 4 )
+```
