@@ -243,6 +243,7 @@ window :
      procedure_id : 1421934449037488553
      type_code : 14
      code : |1+
+      // récupérer le n° de ligne ou se trouve le curseur
       procédure get_numero_de_ligne()
       
       code_js est chaine = [
@@ -267,6 +268,30 @@ window :
        
       
       renvoyer num_ligne
+     type : 458752
+   -
+     name : cmd_aller_sur_une_ligne
+     procedure_id : 1422666264221652743
+     type_code : 14
+     code : |1+
+      // positionner le curseur sur une ligne donnée
+      procédure cmd_aller_sur_une_ligne(local numero_ligne est entier)
+      
+      code_js est chaine = [
+         	var code =  flask.elTextarea.value
+         	var tab_ligne =  code.split('\n')
+         	tab_ligne =	tab_ligne.slice(0, numero_ligne);
+         	var pos = tab_ligne.join('\n').length
+         	// positionner le curseur
+      	flask.elTextarea.selectionStart = pos
+      	flask.elTextarea.selectionEnd   = pos
+      ]
+      
+      code_js= remplace(code_js,"numero_ligne", ""+numero_ligne)
+      ExécuteJS(HTML_edit_code, code_js)
+      
+      
+      
      type : 458752
   procedure_templates : []
   property_templates : []
