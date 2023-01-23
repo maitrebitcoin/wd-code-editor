@@ -49,7 +49,7 @@ window :
      p_codes :
       -
         code : |1+
-         CHAMP_ED_CODE = "// test" +rc+  "x=3"
+         CHAMP_ED_CODE = "// testé ;" +rc+  "x=3"
         type : 18
       -
         type : 161

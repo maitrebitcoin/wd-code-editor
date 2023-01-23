@@ -91,32 +91,10 @@ window :
          fin
       -
         code : |1+
-         // récup de l'a valeur affectée
+         // récup de la valeur affectée
          code_saisi = MoiMême..Valeur
-         
-         code_js est chaine ansi = [
-         	flask.updateCode('%1')<§cs:4§>
-         ]
-         // conversion au format chaine js
-         param_js est chaine UNICODE = code_saisi
-         param_js  = Remplace(param_js,"\","\\")
-         param_js  = remplace(param_js,"""","\""")
-         param_js  = remplace(param_js,"'","\'")
-         param_js  = Remplace(param_js,RC,"\n")
-         param_js  = Remplace(param_js,Caract(13),"\n")
-         param_js  = remplace(param_js,caract(10),"\n")
-         
-         
-         // 0 binaires non autorisés
-         SI Position(code_saisi,Caract(0)) ALORS
-         	param_js = "fichier invalide : avec 0 binaire"
-         FIN
-         // Affectation
-         param_js_a est chaine ansi = UnicodeVersAnsi(param_js,alphabetUTF8)
-         code_js   = Remplace(code_js,"%1",param_js_a)
-         trace(code_js)
-         ExécuteJS(HTML_edit_code,code_js)
-         
+         // affecter dans le html
+         _set_code()
         type : 43
       -
         code : |1+
@@ -142,9 +120,9 @@ window :
      type_code : 14
      code : |1+
       // appelé depuis le JS a chaque modification du code
-      procédure onModifCode(code_js est chaine ansi )
+      procédure onModifCode()
       
-      code_saisi =UTF8VersUnicode(code_js)
+      code_saisi = HTMLValeurChamp(HTML_edit_code,"val")
       
       // appel de la callbakc utilisaeur si définie
       si Traitement_Modification<>null ALORS
@@ -162,42 +140,52 @@ window :
       // Init du champ HTML avec un champ <P> géré par le JS de codeflask
       // voir https://github.com/kazzkiq/CodeFlask
       code_html est chaîne = [
-      <html>
-      <head></head>
-      <style>
-      body {
-          margin: 0;
-          padding: 0;
-      }
-      STYLE_SI_CSS_PERSO
-      </style>
-      <body>
-         <p id="editor" name="editor"/>
-      </body>
-      <script language="Javascript" type="text/javascript">
-      
-      CODE_FLAKS_MIN_JS
-      
-      const editorElem = document.getElementById('editor');
-      // creation editeur
-      const flask = new CodeFlask(editorElem, { language: 'PARAM_LANGUAGE',
-      										  defaultTheme: true,
-      										  lineNumbers: false,
-      										  handleTabs: false
-      										});
-      // CODE_SI_LANGUAGE_PERSO
-      									
-      // init a chaine vide										
-      flask.updateCode('')
-      // pour que la procédure onModifCode soit appelée a chaque modif du code
-      flask.onUpdate((code) => {
-      	WL.Execute("onModifCode", code)
-      });
-      // init termineé
-      var init_terminee = 'ok'
-      
-      </script>
-      </html>
+      <html><§cs:4§>
+      <head></head><§cs:4§>
+      <style><§cs:4§>
+      body {<§cs:4§>
+          margin: 0;<§cs:4§>
+          padding: 0;<§cs:4§>
+      }<§cs:4§>
+      STYLE_SI_CSS_PERSO<§cs:4§>
+      </style><§cs:4§>
+      <body><§cs:4§>
+         <p id="editor" name="editor"/><§cs:4§>
+         <form><§cs:4§>
+            <textarea hidden id="val"></textarea><§cs:4§>
+         </form><§cs:4§>
+      </body><§cs:4§>
+      <script language="Javascript" type="text/javascript"><§cs:4§>
+      <§cs:4§>
+      CODE_FLAKS_MIN_JS<§cs:4§>
+      <§cs:4§>
+      const editorElem = document.getElementById('editor');<§cs:4§>
+      // creation editeur<§cs:4§>
+      const flask = new CodeFlask(editorElem, { language: 'PARAM_LANGUAGE',<§cs:4§>
+      										  defaultTheme: true,<§cs:4§>
+      										  lineNumbers: false,<§cs:4§>
+      										  handleTabs: false<§cs:4§>
+      										});<§cs:4§>
+      // CODE_SI_LANGUAGE_PERSO<§cs:4§>
+      									<§cs:4§>
+      // init a chaine vide										<§cs:4§>
+      flask.updateCode('')<§cs:4§>
+      // pour affecter le code depuis le WL<§cs:4§>
+      const input_val = document.getElementById('val');<§cs:4§>
+      function set_code() {<§cs:4§>
+      	var new_code = input_val.value;<§cs:4§>
+      	flask.updateCode(new_code)<§cs:4§>
+      }<§cs:4§>
+      // pour que la procédure onModifCode soit appelée a chaque modif du code<§cs:4§>
+      flask.onUpdate( (code) => {<§cs:4§>
+      	input_val.value= code;<§cs:4§>
+      	WL.Execute("onModifCode")<§cs:4§>
+      });<§cs:4§>
+      <§cs:4§>
+      // init termineé<§cs:4§>
+      var init_terminee = 'ok';<§cs:4§>
+      </script><§cs:4§>
+      </html><§cs:4§>
       ]
       
       // code JS si on veut personnaliser le langage de l'éditeur de code
@@ -303,8 +291,23 @@ window :
       
       code_js= remplace(code_js,"numero_ligne", ""+numero_ligne)
       ExécuteJS(HTML_edit_code, code_js)
+     type : 458752
+   -
+     name : _set_code
+     procedure_id : 1427120733706407198
+     type_code : 14
+     code : |1+
+      // affect le champ enJS a partir de <_set_code>
+      procédure privée _set_code()
       
+      // 0 binaires non autorisés
+      SI Position(code_saisi,Caract(0)) ALORS
+      	dbgAssertion(faux, "fichier invalide : avec 0 binaire")
+      	code_saisi = ""
+      FIN
       
+      HTMLValeurChamp(HTML_edit_code,"val",code_saisi)
+      ExécuteJS(HTML_edit_code,"set_code()")
       
      type : 458752
   procedure_templates : []
