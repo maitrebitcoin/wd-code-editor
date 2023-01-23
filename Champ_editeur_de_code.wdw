@@ -94,20 +94,27 @@ window :
          // récup de l'a valeur affectée
          code_saisi = MoiMême..Valeur
          
-         code_js est chaine = [
+         code_js est chaine ansi = [
          	flask.updateCode('%1')<§cs:4§>
          ]
+         // conversion au format chaine js
          param_js est chaine UNICODE = code_saisi
+         param_js  = Remplace(param_js,"\","\\")
          param_js  = remplace(param_js,"""","\""")
          param_js  = remplace(param_js,"'","\'")
-         param_js  = remplace(param_js,rc,"\n")
+         param_js  = Remplace(param_js,RC,"\n")
+         param_js  = Remplace(param_js,Caract(13),"\n")
+         param_js  = remplace(param_js,caract(10),"\n")
+         
+         
          // 0 binaires non autorisés
          SI Position(code_saisi,Caract(0)) ALORS
-         	param_js = "fichier invaldie avec des 0 bianires"
-         	retour
+         	param_js = "fichier invalide : avec 0 binaire"
          FIN
          // Affectation
-         code_js   = Remplace(code_js,"%1",param_js)
+         param_js_a est chaine ansi = UnicodeVersAnsi(param_js,alphabetUTF8)
+         code_js   = Remplace(code_js,"%1",param_js_a)
+         trace(code_js)
          ExécuteJS(HTML_edit_code,code_js)
          
         type : 43
