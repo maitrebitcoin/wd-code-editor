@@ -49,7 +49,7 @@ window :
      p_codes :
       -
         code : |1+
-         CHAMP_ED_CODE = "// testé ;" +rc+  "x=3"
+         CHAMP_ED_CODE = "// code de test " +rc+  "x=3" + rc + "y=-1" + rc + "ma_fonction(x, y)"
         type : 18
       -
         type : 161
@@ -226,6 +226,27 @@ window :
         enabled : false
       -
         type : 278
+        enabled : false
+  -
+    name : Sélectionner_sur_une_ligne
+    identifier : 0x23d8bb70015accbf
+    internal_properties : CAAAAAgAAACuG5IxSBJs0VC3pFXhVrMG6da4Qp2zju+mODn0OIJSDvxOhyZ2Fbdbb8vSD9jAXb6ipM0AgJASulflnVEyu8mfLFUgqdmsCgGGsOTRBcSelj+MZB6WWJwr2E8mcg5VVw+OyPopbKXC+eIK9H5jLyy9U2ljd3G/0v9lEa4+OM2RWZLbf3BTer7v8LX3cUfMR2Angf9KFBVKfV08n08AW4CQ7Odxo8fRHKB5L2THIJdx0LpVrDO1CFBNEEdDjXkvTxJVEUlDlCoRBxsJ7VB0Qflaj09TnP7nLfVVbuCzGhGX9UZjpoRIIxAAKEBcOp9tc2fQcfMfEZ4a0RcJlaW8HzZeqAvE97fNkKAiaxnvo6keokLZQmInpjDSkHp+5/jV/vDAI+xwAl/MtyQDd/xoliJqpEfwHZFVQUTK/vHdMxZC1nFF3QRMIidP+yA96n/mOoPFr4/fi4z7oC4SbADCZVa5gSRbUAgUYLQjxco+aGRycqevItn2ccm4c40P63RNf62zNhBhCxQ32sKPQx8RAwcOaW53kfMVZAC6e6UFtt/xgqc55L7sT2OKVkTpIjxc3sEpHJohUWzCxH3hW+cVQL3fvuHhN5mQTvP4SEDqneWIMgsR8/z3Sc6LR5SKXsUhagRMJxituXLP6tMe09pz6fMclXeOvjAY6RxppRclU5EzsRikUXlZv1/FxAB60LIizH9UUca1OZf8AMiEPcnCYMGCB7KOYk8kNjfbBHzvhGBG9U77w3ZKKYMe49rBbh/9nZD3cOhGEvhODhxXYrRyMLgI/upyNg2BtAEUIPEnUIoJx+p+UFOHoK10S5q47nEvy1rR0IiwNz09Uv3u/HSNrG17xHGdPnM9MygnxXHylUOVVn2WQH7ORZZbE23mRwRA6lhooCXGmb+npg==
+    properties :
+     x : 10
+     y : 250
+     width : 147
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         CHAMP_ED_CODE.cmd_selectionne_une_ligne( SAI_n_de_ligne )
+        type : 18
+      -
+        type : 161
         enabled : false
  menu :
   name : _Menu

@@ -140,52 +140,52 @@ window :
       // Init du champ HTML avec un champ <P> géré par le JS de codeflask
       // voir https://github.com/kazzkiq/CodeFlask
       code_html est chaîne = [
-      <html><§cs:4§>
-      <head></head><§cs:4§>
-      <style><§cs:4§>
-      body {<§cs:4§>
-          margin: 0;<§cs:4§>
-          padding: 0;<§cs:4§>
-      }<§cs:4§>
-      STYLE_SI_CSS_PERSO<§cs:4§>
-      </style><§cs:4§>
-      <body><§cs:4§>
-         <p id="editor" name="editor"/><§cs:4§>
-         <form><§cs:4§>
-            <textarea hidden id="val"></textarea><§cs:4§>
-         </form><§cs:4§>
-      </body><§cs:4§>
-      <script language="Javascript" type="text/javascript"><§cs:4§>
-      <§cs:4§>
-      CODE_FLAKS_MIN_JS<§cs:4§>
-      <§cs:4§>
-      const editorElem = document.getElementById('editor');<§cs:4§>
-      // creation editeur<§cs:4§>
-      const flask = new CodeFlask(editorElem, { language: 'PARAM_LANGUAGE',<§cs:4§>
-      										  defaultTheme: true,<§cs:4§>
-      										  lineNumbers: false,<§cs:4§>
-      										  handleTabs: false<§cs:4§>
-      										});<§cs:4§>
-      // CODE_SI_LANGUAGE_PERSO<§cs:4§>
-      									<§cs:4§>
-      // init a chaine vide										<§cs:4§>
-      flask.updateCode('')<§cs:4§>
-      // pour affecter le code depuis le WL<§cs:4§>
-      const input_val = document.getElementById('val');<§cs:4§>
-      function set_code() {<§cs:4§>
-      	var new_code = input_val.value;<§cs:4§>
-      	flask.updateCode(new_code)<§cs:4§>
-      }<§cs:4§>
-      // pour que la procédure onModifCode soit appelée a chaque modif du code<§cs:4§>
-      flask.onUpdate( (code) => {<§cs:4§>
-      	input_val.value= code;<§cs:4§>
-      	WL.Execute("onModifCode")<§cs:4§>
-      });<§cs:4§>
-      <§cs:4§>
-      // init termineé<§cs:4§>
-      var init_terminee = 'ok';<§cs:4§>
-      </script><§cs:4§>
-      </html><§cs:4§>
+      <html>
+      <head></head>
+      <style>
+      body {
+          margin: 0;
+          padding: 0;
+      }
+      STYLE_SI_CSS_PERSO
+      </style>
+      <body>
+         <p id="editor" name="editor"/>
+         <form>
+            <textarea hidden id="val"></textarea>
+         </form>
+      </body>
+      <script language="Javascript" type="text/javascript">
+      
+      CODE_FLAKS_MIN_JS
+      
+      const editorElem = document.getElementById('editor');
+      // creation editeur
+      const flask = new CodeFlask(editorElem, { language: 'PARAM_LANGUAGE',
+      										  defaultTheme: true,
+      										  lineNumbers: false,
+      										  handleTabs: false
+      										});
+      // CODE_SI_LANGUAGE_PERSO
+      									
+      // init a chaine vide										
+      flask.updateCode('')
+      // pour affecter le code depuis le WL
+      const input_val = document.getElementById('val');
+      function set_code() {
+      	var new_code = input_val.value;
+      	flask.updateCode(new_code)
+      }
+      // pour que la procédure onModifCode soit appelée a chaque modif du code
+      flask.onUpdate( (code) => {
+      	input_val.value= code;
+      	WL.Execute("onModifCode")
+      });
+      
+      // init termineé
+      var init_terminee = 'ok';
+      </script>
+      </html>
       ]
       
       // code JS si on veut personnaliser le langage de l'éditeur de code
@@ -275,21 +275,46 @@ window :
      name : cmd_aller_sur_une_ligne
      procedure_id : 1422666264221652743
      type_code : 14
-     code : |1+
+     code : |1-
       // positionner le curseur sur une ligne donnée
       procédure cmd_aller_sur_une_ligne(local numero_ligne est entier)
       
       code_js est chaine = [
          	var code =  flask.elTextarea.value
          	var tab_ligne =  code.split('\n')
-         	tab_ligne =	tab_ligne.slice(0, numero_ligne);
-         	var pos = tab_ligne.join('\n').length
+      	// récup code avant la ligne <numero_ligne>   	
+          var	tab_ligne_avant =	tab_ligne.slice(0, numero_ligne-1);
+         	var pos  = tab_ligne_avant.join('\n').length
          	// positionner le curseur
-      	flask.elTextarea.selectionStart = pos
-      	flask.elTextarea.selectionEnd   = pos
+      	flask.elTextarea.selectionStart = pos+1
+      	flask.elTextarea.selectionEnd   = pos+1
       ]
       
       code_js= remplace(code_js,"numero_ligne", ""+numero_ligne)
+      ExécuteJS(HTML_edit_code, code_js)
+     type : 458752
+   -
+     name : cmd_selectionne_une_ligne
+     procedure_id : 1430098829669191146
+     type_code : 14
+     code : |1+
+      // sélectionner une ligne du code
+      PROCÉDURE cmd_selectionne_une_ligne(LOCAL numero_ligne est entier)
+      
+      code_js est chaîne = [
+         	var code =  flask.elTextarea.value
+         	var tab_ligne =  code.split('\n')
+      	// récup code avant la ligne <numero_ligne>   	
+          var	tab_ligne_avant =	tab_ligne.slice(0, numero_ligne-1);
+          var	tab_ligne_apres =	tab_ligne.slice(0, numero_ligne);
+         	var pos  = tab_ligne_avant.join('\n').length
+         	var pos2 = tab_ligne_apres.join('\n').length
+         	// positionner le curseur
+      	flask.elTextarea.selectionStart = pos+1
+      	flask.elTextarea.selectionEnd   = pos2+1
+      ]
+      
+      code_js= Remplace(code_js,"numero_ligne", ""+numero_ligne)
       ExécuteJS(HTML_edit_code, code_js)
      type : 458752
    -
