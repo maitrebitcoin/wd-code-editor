@@ -288,9 +288,12 @@ window :
       	// récup code avant la ligne <numero_ligne>   	
           var	tab_ligne_avant =	tab_ligne.slice(0, numero_ligne-1);
          	var pos  = tab_ligne_avant.join('\n').length
-         	// positionner le curseur
+         	// positionner le curseur	
       	flask.elTextarea.selectionStart = pos+1
       	flask.elTextarea.selectionEnd   = pos+1
+      	// pour scroller sur le caret
+      	flask.elTextarea.blur()
+      	flask.elTextarea.focus()
       ]
       
       code_js= remplace(code_js,"numero_ligne", ""+numero_ligne)
@@ -317,6 +320,9 @@ window :
          	// positionner le curseur
       	flask.elTextarea.selectionStart = pos+1
       	flask.elTextarea.selectionEnd   = pos2+1
+      	// pour scroller sur le caret
+      	flask.elTextarea.blur()
+      	flask.elTextarea.focus()	
       ]
       
       code_js= Remplace(code_js,"numero_ligne", ""+numero_ligne)
