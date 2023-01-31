@@ -10,7 +10,7 @@ info :
 window :
  name : Champ_editeur_de_code
  identifier : 0x23ba8a0d04238390
- internal_properties : CAAAAAgAAAD5Qpey4DLRy/kzCyk2gY4echW2gHK9fzDgoIiAoZeH1lj/oMkAHMsrvgBLeBEQvtnpjPvsKMgK3r4dkac64zdS34GRhbOFhBy+yyWu1Sz0YRiA8YofwMKfR6Q8YYHLWcogsnhCdR/GwG4digwRFQMPV+fQXFvGU+/Ru7Zw3AyxVu1VkaVS2rilJ72s0miY9ppuLNw+R84pXMa2wOCkNcpkkN/cOHbrKEaRRXyylU4Z3rjt8sH8kvUTJHWBod1BFhcBmvwSRHisoprzfYpbHch4nt69qqvp1QPnqzzyCnZthwUUEHELaPOpjZ1FaRBjQz7tRWMNljglS2ZELlcPDBu/8vlgjB/jBc5alioXwU3DCgLmI8r4IzU0huQC1wacSMLLt6tsFxXr3DJFFCiY5SkzAmqN5yhTimjMRkNunI1aEvLFL4gFM9CXPw6F0cHGqiHS3qrIFoeNnYksmeEWHWMYMLvV991rw7kORQEVZzqgjew3DzWfOCnV9HgDi3/7+WDrlOX3WBIInOAesZ+cZMzzTMUQ2ZTNtm3Pnhp0WVn8Nt0KesJ32UALI2QmhqNVbZ0TpXguDDadEGhJaKKmPHBdIpvFQjxxbihgRyC5xa80Swih5BtLN1mkpOholNRHpfXlLqys9fQmHt5dBNkkkzUjWRbuwIE/hMjaxc/QxGPP7NazKyOoSJ+yPYMMeN6hkBxCNej2gtM6bnka8BbaicLl+/pihQad
+ internal_properties : CAAAAAgAAABZojdSANJxKxnT64lW4e5+ErUW4FKd39BAAKggATcn9rjfQOmgPOuLXqCrWLFwHjmJrNvMCKhq/p59sUcaA1fyv2GxpdOlJHxea4WO9QxUwbggUWr/oCI/pwRcgeHreWqAkhjilb/mIA69amwx9eNvjw5GFT+ISTddB9oAJOCh2mmRYb0y9tSNO5GwMihk3l4KQAyOfyLdLAJijIAU4bpgLMssiNbvJEZdkVAapVJhKqTBsiGM1uFj8LFN4YXNhpu97iRKDDzw0rb/iYpL2cD8+rJdwuvt0Zu7X/CqyhqVc9n4eAGL1FdJ6UlxGdAvO4KhASNNLtQJY6KQetevmJszxi3w1IdXCU4GMn4f8Tk7Zj46C+zOGSMitNIALbzK/nThXUl2TSsZChg76t62G3eFgPiD4TZZqPZa1EEUWqOw5NALZeoLaRZNndTLh78ccHMgTJDq9O3T4//STzfEYzl69oET2eNhua8Es3/jLUj2J1L9XQfNLkdjUg4pqf2RB3L5qnNZ/qC+Ql6cn5WKmuqNmquOe7p7RAulpAB6R0/KAAsI8JRVd86ZsfK0LIlzc9+lxyyKvBZ9cIgpSIJGnJB9wjtlIlwRDkhAZ8DZJU+UK2gBRLurl7kExMhI9HSnxZUFzsyMFZTGvr59JPkEsxUDufbO4GEfZCh6Ja8wZMNvDPZTSwPIaL9SnSOsmD5BcHwiFciW4rMaThl6UPb6aeKFG5qC5aY9
  properties :
   width : 640
   height : 480
@@ -81,6 +81,7 @@ window :
          	code_saisi est une chaîne UNICODE
          	
          	Traitement_Modification est une procédure
+         
          	
          ParametreEditeur est une structure
          	avec_numéro_de_ligne est booléen // si vrai affiche les n° de ligne a gauche
@@ -279,6 +280,8 @@ window :
       // positionner le curseur sur une ligne donnée
       procédure cmd_aller_sur_une_ligne(local numero_ligne est entier)
       
+      _contourne_pb_focus()
+      
       code_js est chaine = [
          	var code =  flask.elTextarea.value
          	var tab_ligne =  code.split('\n')
@@ -300,6 +303,8 @@ window :
      code : |1+
       // sélectionner une ligne du code
       PROCÉDURE cmd_selectionne_une_ligne(LOCAL numero_ligne est entier)
+      
+      _contourne_pb_focus()
       
       code_js est chaîne = [
          	var code =  flask.elTextarea.value
@@ -333,6 +338,26 @@ window :
       
       HTMLValeurChamp(HTML_edit_code,"val",code_saisi)
       ExécuteJS(HTML_edit_code,"set_code()")
+     type : 458752
+   -
+     name : _contourne_pb_focus
+     procedure_id : 1430102987199484089
+     type_code : 14
+     code : |1+
+      // contourne un pb de non prise de focus si on jamais cliqué sur le champ    
+      procédure privée _contourne_pb_focus()
+             
+      // sauver la position du curseur
+      ResXY est un entier = CurseurPos(cpEcran)
+      soit x_sauve = PoidsFaible(ResXY)
+      soit y_sauve = PoidsFort(ResXY)
+      // clique dans le champ
+      x est un entier = HTML_edit_code..Largeur/2
+      y est entier = 20 // 1er ligne  
+      PiloteSouris(HTML_edit_code,psEnfonceBoutonGauche,x,y)
+      PiloteSouris(HTML_edit_code,psRelacheBoutonGauche,x,y)
+      // restaure la position du curseur
+      CurseurPos(cpEcran,x_sauve,y_sauve)
       
      type : 458752
   procedure_templates : []
