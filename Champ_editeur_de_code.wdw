@@ -10,7 +10,7 @@ info :
 window :
  name : Champ_editeur_de_code
  identifier : 0x23ba8a0d04238390
- internal_properties : CAAAAAgAAABZojdSANJxKxnT64lW4e5+ErUW4FKd39BAAKggATcn9rjfQOmgPOuLXqCrWLFwHjmJrNvMCKhq/p59sUcaA1fyv2GxpdOlJHxea4WO9QxUwbggUWr/oCI/pwRcgeHreWqAkhjilb/mIA69amwx9eNvjw5GFT+ISTddB9oAJOCh2mmRYb0y9tSNO5GwMihk3l4KQAyOfyLdLAJijIAU4bpgLMssiNbvJEZdkVAapVJhKqTBsiGM1uFj8LFN4YXNhpu97iRKDDzw0rb/iYpL2cD8+rJdwuvt0Zu7X/CqyhqVc9n4eAGL1FdJ6UlxGdAvO4KhASNNLtQJY6KQetevmJszxi3w1IdXCU4GMn4f8Tk7Zj46C+zOGSMitNIALbzK/nThXUl2TSsZChg76t62G3eFgPiD4TZZqPZa1EEUWqOw5NALZeoLaRZNndTLh78ccHMgTJDq9O3T4//STzfEYzl69oET2eNhua8Es3/jLUj2J1L9XQfNLkdjUg4pqf2RB3L5qnNZ/qC+Ql6cn5WKmuqNmquOe7p7RAulpAB6R0/KAAsI8JRVd86ZsfK0LIlzc9+lxyyKvBZ9cIgpSIJGnJB9wjtlIlwRDkhAZ8DZJU+UK2gBRLurl7kExMhI9HSnxZUFzsyMFZTGvr59JPkEsxUDufbO4GEfZCh6Ja8wZMNvDPZTSwPIaL9SnSOsmD5BcHwiFciW4rMaThl6UPb6aeKFG5qC5aY9
+ internal_properties : CAAAAAgAAAALSfjJgBziKOrr5XZhSloO1JEQz1qLsIwjvz5qxrtXZq7gKW4ESS3NANkSTWteOrkeWLmQCRKvFovL3cTJh+Qzd8rYDor1nR4O9hleeurcRByaJaH55iGer3bJyWqI39umqXJTCrYZ4OXVAv8nf11CY606NyrVKHWQvmbpPhqT6icwgvKtbel68oy58/QSTlBiRmqhgK3YNmG4zOKORF5Nwn5/7U1YfxNOfR+/2mIykYbeJf68z9Om4P2ud/+t7pp83uNGn/rxwyLVuz/JqChFowBcMS3U+oXHYczz8uFnSDQZBJib7B7fFfbErOzM1X1+Z4EInbqGI0GH8U6P40fnup4nQBfbP6fUYlQgaw9ETB+hihnxkV5oILd4UUTj42cUiQtXqC1nPJh0p/bqxat4+AcTBMb3rxKCwsbDmb6UC62yGyVeSQevRigo1QDC++EcFaybNM6BY9qsIQU2qpVMlO8d2xOxk6m0MXDl1rFcV+8oAvrRYem5gizUbQot5TDAHJi1TWQpz3kVnMQqQI6NHXu8qcH+tgTfMHRne0XDVgZE2TBA57j8A7RXspjwIRghxbEBkwroL57MsbU2CXIlFPP1RKQzGSYMdQVwTf6ffIXu/vAqFfuXr35BwhnNk/OiUGGMHWuQtfkb+3h0nYh3VmKu7QA6DuHKrjfMivP4unDtJUBg2uGJFNUSrr9RSi0rmRVH0yDnLfrLSxhLsLB+UrBW04OxBUN7Eq+OBYsWdh8k6A==
  properties :
   width : 640
   height : 480
@@ -18,7 +18,7 @@ window :
   -
     name : Champ_editeur_de_code
     identifier : 0x23ba8a0d04248390
-    internal_properties : CAAAAAgAAADKpPPh1RbJq7H8N2MsvsM+sMmlRc5da67B/V1zPzTk06dyOwKVvnBPPSlCyQ0X8N6AT6vfnNgUPGSngQAwNJsM7+pDcUD9ymLrqzTv9L3I3bJWpSDp6nJchxYrPNLk+FLA9KIEAfQeWc9BQnUl135v0xMdM+N+cc0VHPt/VXsJPF5fJ1+skAYOYhlO6nGZLQ9m5v3mb3FJHUjcoCsu6K/U9Zr13bYiRkyOrVFPfsl0WzTHCAcSkk7Po3ppAdQk7CLxnN0pj2Zhgfvl+5tfaAoEzIyukLq61JM+nsiqrg48xx1KtST3E5srvQTxFexzVZdWKxGd0/N3fSCbJGiFM4K6e/oXh8Owc3uc/HOlUNSn3qODXRoNO+Its2XDRdIphnc3ni9Nhaa1vPRQtdaWp0HWpmfKzI9LtWVP4QjhKLaMRFuD+d1FpWR6Yr8OhQ==
+    internal_properties : CAAAAAgAAABW5DLVl3R6OEnr/TF3rgbyJ2H6OQNd7WagdST7HE2N3CbEFLnxuwFaYgC4DZ0R8AFClTLu5hCRXNmh+cl8WnmrNyM+TthOp/d7PKjYuls0jKn+PVIPQ+n3NwIhX1pjUpt9HgozTyrF80XvC+QzkQUZsVqWsHXVdK4ip2cyeika+do84Qy93CcFjWqaD81b/IXuRCCSV87l/kJBNib+ef/KgX9Fim/HjHZow3pbMFVioB52IxX7nUwc04Ml+dVfr7MB0MyEL2YP/OUkR7J2afmwc5JFflR3tQ9JUgGpqjRorgi+PtcLnb3qzeeq8IUf/WrNZaaDzCLdAD8V1E30jwrweeMDtOk1OqkNQ1ckZpHpf1fZZA3z0rsjRHgD02PrvgbulXSqNq8d06qOcKO3hOEgQjg6VjCtWdFBJopSTyOS9wcs6CVghbKGt7WrL2R2/2udZtbJI8/bnuttZABUZbtzNFnV
     properties :
      width : 640
      height : 480
@@ -26,7 +26,7 @@ window :
      -
        name : HTML_edit_code
        identifier : 0x23ba8a0d04258390
-       internal_properties : CAAAAAgAAAA/eOjbKS1uyfyzB+aSEfdKGPFRQcJlQQOhJbBvL//r3hrOI+RJlzjIxTsfTfowBqfkWqpuRt7w1/hpIqRy+yepUnL9qQg+AHPwMSMmiXp86JI2PbY9I3YB2lgI4ulKS/Z81ekBnpxxBNNVsWwvDxKy684jQPW4Yn/qCnhywRxQiVlqKdh2slkxz+R3eB5wqUdlwEwiaw85MbiohCx4ApYjLTjklEnUzResBhajQQP6uosuxqjyfl31ddGsfTJcL4LengTdUPrpIOj1M6mAjNJFwRKW3FRQLikZS1uOwxHNJ3IaYLShvs2DahV96wLGYYYZgXlgKABJlYBBUkXhkBYh/iWmpRmnDKGL4pV9IQX6Wdp7Kh1K8cuQx75VTJFayfQErVo9a+G7GMXHAqA1LQSFLvXl/4LZCjw5hyt15yeZm6IJwIbmnW0Fj97C6VxSPAh8lLdP/bSDDMO+adkWO3MUUH0k4p8gfMIqtiNl5x5Sl7uIwzonRxXxAiId7ZaOqvv+7f0XNDqLHByxQZ9Eu2JB/tzvvvybmi/3aJbqlwEIpG+ViwCY3Idr27pwVVzJt3i3/JxuATJzxzsKCIvjhIR/mhiLcnAqe+0WZNZkLzESS/WCbuF5Dlq0kw4J7J4CmwdFvg+1t4Arm+DzP5lCbEGXC910Uo2sNo7rzxVrrAs=
+       internal_properties : CAAAAAgAAAAeEFAmQZAlGA3SICRRBm5hr1z5QPr4UiUSBqXqUnDEgS4JqfI6NaM5KzQZCq8iCGfRCbaNftB10sfe947Ns1K0mNMRUx1Iuj5wvUyuFnomtqCfbcenWrx6tYCMUfeT1CTcTvE1pAoDbyqxrZcPGHtONwUaUXe5k99HPdOXUr2ZKxbPqOsBl+5HNNSdO0MVjLX75Wun5Nu9FUSK5S/1GxB3WqZ+RCbBBUbKv4atsc9H5NnNIM9ESc3eCff6WtLaritiWkxKIANNZDzxSyVdWm4WQLlYUGSWoTXdIIW8TeNQd8LRozcCd9LdmiVrJ4KHTBOnSWoaCAAd+pftfjCMTl+RbpbvjmemdvMfPLIXhRcaz0/YUg3iVCdqCnNUVw3UZ4ouPpcaqWF5eyyNfTpePg0TmjgBLb8MUKgVFnsESycU85hDMn22kTYH/UVUtzXZQCkn5LuGVXQk0MDqRm0uyHPlvls22TkrXZUHno8HfAwO9yRMkx+7g4KKpxvnUJ/0qSe0cJxQdo1XjIqvBKkaY/Abjtf+r8Knkefxv4p6q6pBtnL3l/4FZT0rzY/LoZuXKu+huiqj/eArApjJdAv6Wqh7kmpZ6CUK6nPCTpjtvOerrB09ef7HGo5d/PwPdCiGIVx1vVTW12MJw3EOEgOkEH2GP3KHOiDLbErNpohjTrSy/730fyFco834tFjJ0/zIayrZhYmuFVHSNC4=
        properties :
         width : 640
         height : 480
@@ -39,12 +39,6 @@ window :
             global
             	chargement_termine est un booléen
            type : 14
-         -
-           code : |1+
-            PROCÉDURE ClicLien(sUrl est chaine, bDansNouvelleFenetre est un booléen, sDestination est une chaine)
-            
-            RENVOYER Vrai
-           type : 266
          -
            code : |1+
             PROCEDURE ChangePage( sUrl est chaine, sDestination est une chaine )
@@ -67,6 +61,12 @@ window :
            type : 289
          -
            code : |1+
+            PROCÉDURE ClicLien(sUrl est chaine, bDansNouvelleFenetre est un booléen, sDestination est une chaine)
+            
+            RENVOYER Vrai
+           type : 266
+         -
+           code : |1+
             PROCEDURE ClicDroitLien( sUrl est chaine )
            type : 291
     type : 32
@@ -78,6 +78,7 @@ window :
          PROCEDURE MaFenêtre()
          
          global
+         	init_faite est un booléen 
          	code_saisi est une chaîne UNICODE
          	
          	Traitement_Modification est une procédure
@@ -105,12 +106,13 @@ window :
  menu :
   name : _Menu
   identifier : 0x23b27b2e02e88cc1
-  internal_properties : CAAAAAgAAAABuiDdDKH7981ND6pQYOtGLupg0XoQvXcJmw/tKdeIXjdaqbIdOt6u0YbpUtNJJuYOi6N6iz+igNY0mxbBusOWp0uVynfKDwECwE7Aq9YpjRCy18vIQfudU/wyNofqD9RQeKP0TUqu/I/ARXJDldW3aRQdmb2Z5B+RqTe1EkNAreBzqEk+ciFRXt8vYxRoUV9kuNJXcE/eeWLnX+I6I2hA/rYmgbhr4PRLRPjm8a9S3WPLcHscJyvxu6qyajLPombJ12UXDxGuNKliq8c/xa/8GxywA6otig==
+  internal_properties : CAAAAAgAAADr3pbrtpC4wpS8Uu9VfRbbRjL4kULgPf+Z41fVCbeIvreKecodkgZ+aWbp0lsxXm5Wg8saw++SqLa8o66xCtNWh/vFIlcyx4GKwL4gIy4hxcjqHyswwWulExSqHkcaz8QgSIOc7aLmrDcQRXZHOVEr5bi5ddmt4Lt99YvpVmecMbxX9PV6Nu2d6ltTN3iMvYNAHE7jzPN61Y7TcyYO1+T0CiryPVSPPBDX0My65dOeAd/v3IdIuwctl/YGfrbDnlrFy6FjC7Uqrqdiq/cHZ2seJcCMuwqH4A==
   options : []
  languages :
   - fr-FR
  popup_menus : []
  message_bar : {}
+ actionbar : {}
  code_elements :
   type_code : 71
   p_codes : []
@@ -137,6 +139,8 @@ window :
      type_code : 14
      code : |1-
       procédure init_editeur( parametre_editeur est ParametreEditeur  )
+      
+      init_faite = Vrai
       
       // Init du champ HTML avec un champ <P> géré par le JS de codeflask
       // voir https://github.com/kazzkiq/CodeFlask
@@ -336,6 +340,13 @@ window :
       // affect le champ enJS a partir de <_set_code>
       procédure privée _set_code()
       
+      // init au 1er appel si non fait
+      si pas init_faite ALORS
+      	param_par_défaut est ParametreEditeur
+      	init_editeur(param_par_défaut)
+      FIN
+      
+      
       // 0 binaires non autorisés
       SI Position(code_saisi,Caract(0)) ALORS
       	dbgAssertion(faux, "fichier invalide : avec 0 binaire")
@@ -369,12 +380,12 @@ window :
   procedure_templates : []
   property_templates : []
  code_parameters :
-  internal_properties : CAAAAAgAAAA6ih3UbgNXHwTtiPSFUEj+2fi/m7v4QV2rqidAupM=
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
   original_name : FenêtreInterne1
 resources :
  string_res :
   identifier : 0x13b27b2e001f8cc1
-  internal_properties : CAAAAAgAAAAnMYFQ1bL/vz9ehh7L22SNNSlIzGTOI8h5F/WtgDNP
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
 custom_note :
  internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
 rad :
